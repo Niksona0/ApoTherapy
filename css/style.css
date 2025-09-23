@@ -9685,8 +9685,8 @@ button {
     }
 }
 
-#gal {
-    background: #11212d
+#gal:hover {
+    cursor: pointer;
 }
 
 .jw-modal-body-gallery,.modal-vids {

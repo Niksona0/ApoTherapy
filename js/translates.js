@@ -18,6 +18,9 @@ const translations = {
     eur: "Experience Unmatched Relaxation and Wellness with Our Exceptional Masseuse: Elevate Your Journey to New Heights of Comfort, Renewal, and Total Relaxation",
     hsrv: "Hotels Served",
     hClients: "Happy Clients",
+    aboutThem: "With over 15 years in holistic therapy and wellness, Khatia is a World Massage Championship winner and judge. Theodore, with nearly 15 years of international training, has collaborated with leading hotels, physiotherapists, and wellness centers. Together, they deliver exceptional therapeutic massage and wellness services.",
+    yec: "Years of experience combined",
+    hcc: "Happy Clients Combined",
 
     // Service starts
     ourService: "Our Service",
@@ -149,21 +152,32 @@ const translations = {
     buccalBig: "There are many innovative beauty and wellness solutions available today and one of these is buccal massage. Tissues don’t receive enough nutrients and oxygen, resulting in water retention, puffiness, a dull complexion, and drooping cheeks and jowls. Buccal massage resolves these issues, providing numerous skin benefits.",
 
     // about 
-    masseuse: "Masseuse",
-    khBakuradze: "Khatia Bakuradze",
-    aboutKhatia: "Certified specialized massage therapist;",
-    qualifications: "Massage coach.",
-    fPlace: "15 years of work experience.",
-    sPlace: "Specializing in various techniques such as:",
-    certified: "Certified Masseuse",
-    bom: "Facial Massage",
-    gusha: "Gua Sha",
-    tmas: "Thai massage",
-    cumasag: "Cupping Therapy",
-    thermas: "Therapeiutic Massage",
-    mhc: "Many happy customers;",
-    wowmc: "Winner of World Massage Championship;",
-    cN: "Contact Now",
+    cat: "Certified Alternative Therapist",
+    lympho: "Lymphotherapist",
+    chiro: "Chiropractor",
+    wmc: "World Massage Coach",
+    khatiaDesc: "Judge at the World Massage Competition. Professional experience since 2010, with over 15 years in holistic therapy and wellness. Winner of the World Massage Championship, with numerous awards in various massage techniques.",
+    theodoraDesc: "Professional experience since 2012, with nearly 15 years in the field and international studies in therapeutic massage and wellness. Collaborated with major hotels, physiotherapists, and wellness centers, delivering high-quality services.",
+    certp: "Certified Physiotherapist",
+    spatherapist: "Spa Therapist",
+    cosmetologist: "Cosmetologist",
+
+    // OLD
+    // masseuse: "Masseuse",
+    // khBakuradze: "Khatia Bakuradze",
+    // aboutKhatia: "Certified specialized massage therapist;",
+    // qualifications: "Massage coach.",
+    // fPlace: "15 years of work experience.",
+    // sPlace: "Specializing in various techniques such as:",
+    // certified: "Certified Masseuse",
+    // bom: "Facial Massage",
+    // gusha: "Gua Sha",
+    // tmas: "Thai massage",
+    // cumasag: "Cupping Therapy",
+    // thermas: "Therapeiutic Massage",
+    // mhc: "Many happy customers;",
+    // wowmc: "Winner of World Massage Championship;",
+    // cN: "Contact Now",
 
     // Second carousel
     makeaGift: "Make a Gift",
@@ -242,10 +256,13 @@ const translations = {
 
     // ABOUT US
     aboutUs: "Σχετικά με εμάς",
-    bestMm: "Ο καλύτερος μασέρ",
+    bestMm: "Οι καλύτεροι μασέρ",
     eur: "Ζήστε απαράμιλλη χαλάρωση και ευεξία με τους εξαιρετικούς μασέρ μας: Ανεβάστε το ταξίδι σας σε νέα ύψη άνεσης, ανανέωσης και απόλυτης χαλάρωσης",
     hsrv: "Ξενοδοχεία που εξυπηρετούνται",
     hClients: "Ευτυχισμένοι πελάτες",
+    aboutThem: "Με πάνω από 15 χρόνια εμπειρίας στην ολιστική θεραπεία και ευεξία, η Khatia είναι νικήτρια του Παγκοσμίου Πρωταθλήματος Μασάζ και κριτής. Ο Theodore, με σχεδόν 15 χρόνια διεθνούς εκπαίδευσης, έχει συνεργαστεί με κορυφαία ξενοδοχεία, φυσιοθεραπευτές και κέντρα ευεξίας. Μαζί, προσφέρουν εξαιρετικές υπηρεσίες θεραπευτικού μασάζ και ευεξίας.",
+    yec: "Χρόνια εμπειρίας σε συνδυασμό",
+    hcc: "Ευχαριστημένοι πελάτες σε συνδυασμό",
 
     // Service starts
     ourService: "Η ΥΠΗΡΕΣΙΑ ΜΑΣ",
@@ -375,6 +392,18 @@ const translations = {
     buccalBig: "Υπάρχουν πολλές καινοτόμες λύσεις ομορφιάς και ευεξίας που είναι διαθέσιμες σήμερα και μία από αυτές είναι το στοματικό μασάζ. Οι ιστοί δεν λαμβάνουν αρκετά θρεπτικά συστατικά και οξυγόνο, με αποτέλεσμα την κατακράτηση νερού, το πρήξιμο, μια θαμπή επιδερμίδα και τα πεσμένα μάγουλα και τα πόδια. Το στοματικό μασάζ επιλύει αυτά τα προβλήματα, παρέχοντας πολυάριθμα οφέλη για το δέρμα.",
 
     // about
+    cat: "Πιστοποιημένη Εναλλακτική Θεραπεύτρια",
+    lympho: "Λεμφοθεραπευτρια",
+    chiro: "Χειροπράκτης",
+    wmc: "Κριτής σε Παγκόσμιο Διαγωνισμό Μασαζ",
+    khatiaDesc: "Με προϋπηρεσία απο το 2010 έχοντα πάνω από 15 χρόνια επαγγελματικής εμπειρίας στον χώρο της ολιστικής θεραπείας και της ευεξίας. Νικήτρια του Παγκόσμιου Πρωταθλήματος Μασάζ, με συνεργασίες σε πολυτελή ξενοδοχεία και κέντρα ευεξίας, προσφέροντας υψηλού επιπέδου υπηρεσίες",
+    theodoraDesc: "Με προϋπηρεσία απο το 2012 με σχεδόν 15 χρόνια επαγγελματικής πορείας στον χώρο και σπουδές παγκοσμίως στο χώρο της θεραπευτικής μάλαξης και της ευεξίας. Συνεργασία με μεγάλα ξενοδοχεία, φυσικοθεραπευτήρια και κέντρα ευεξίας , προσφέροντας υψηλού επιπέδου υπηρεσίες.",
+    certp: "Πιστοποιημένη Φυσικοθεραπεύτρια",
+    spatherapist: "Spa Θεραπευτρια",
+    cosmetologist: "Αισθητικός",
+
+    // OLD
+
     masseuse: "Μασέρ",
     khBakuradze: "Khatia Bakuradze",
     aboutKhatia: "Πιστοποιημένος εξειδικευμένος θεραπευτής μασάζ.",

@@ -9,7 +9,6 @@ const translations = {
     spa: "Spa & Beauty Center",
     h3treatment: "Apo Therapy",
     treatment: "Massage treatments relax muscles, relieve tension, and improve circulation, promoting overall well-being.",
-    Appointment: "Questions",
     gallery: "Gallery",
 
     // ABOUT US
@@ -213,6 +212,7 @@ const translations = {
     s2: "Service 1",
     s3: "Service 1",
     mApointment: "Send",
+    catalouge: "Download Our Catalogue",
 
     // Team Start
     champion: "Champion",
@@ -238,7 +238,7 @@ const translations = {
     emailplaceholder: "Your Email",
     dataplaceholder: "Select Date",
     timeplaceholder: "Select Time",
-    questionplaceholder: "Your Question",
+    questionplaceholder: "Your Message",
 
   },
   el: {
@@ -247,7 +247,7 @@ const translations = {
     about: "σχετικά με",
     service: "Υπηρεσίες",
     masseuse: "μασέρ",
-    contact: "Επικοινωνία",
+    contact: "Επαφή",
     spa: "SPA & ΚΕΝΤΡΟ ΟΜΟΡΦΙΑΣ",
     h3treatment: "Θεραπεία Μασάζ",
     treatment: "Οι θεραπείες μασάζ χαλαρώνουν τους μύες, ανακουφίζουν την ένταση και βελτιώνουν την κυκλοφορία του αίματος, προάγοντας τη συνολική ευεξία.",
@@ -453,7 +453,8 @@ const translations = {
     s1: "Υπηρεσία 1",
     s2: "Υπηρεσία 2",
     s3: "Υπηρεσία 3",
-    mApointment: "Κλείστε ραντεβού",
+    mApointment: "Στέλνω",
+    catalouge: "Κατεβάστε τον Κατάλογό μας",
     
     // Team Start
     champion: "Πρωταθλήτρια",
@@ -479,7 +480,7 @@ const translations = {
     emailplaceholder: "Η διεύθυνση του ηλεκτρονικού σου ταχυδρομείου",
     dataplaceholder: "Επιλέξτε Ημερομηνία",
     timeplaceholder: "Επιλέξτε Ώρα",
-    questionplaceholder: "Η ερώτησή σας",
+    questionplaceholder: "Το μήνυμά σας",
   }
 };
 

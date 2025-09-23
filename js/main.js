@@ -10,7 +10,7 @@ const openModal = id => {
     // Set volume for all videos inside this modal
     modal.querySelectorAll('video').forEach(video => {
     video.volume = 0.1;    // 10% volume
-    // video.play();
+    // video.play(); // auto playistvis
   });
 };
 
@@ -70,7 +70,7 @@ window.addEventListener('load', () => {
             $this.text('0'); // start from 0
 
             $({ Counter: 0 }).animate({ Counter: finalValue }, {
-                duration: 1000,
+                duration: 1500,
                 easing: 'swing',
                 step: function(now) {
                     $this.text(Math.ceil(now) + '+'); // append + while counting

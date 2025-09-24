@@ -4020,6 +4020,10 @@ a.btn.disabled,fieldset:disabled a.btn {
     right: 50px
 }
 
+
+
+
+
 @media (max-width:575.98px) {
     .navbar-expand-sm>.container,.navbar-expand-sm>.container-fluid,.navbar-expand-sm>.container-lg,.navbar-expand-sm>.container-md,.navbar-expand-sm>.container-sm,.navbar-expand-sm>.container-xl {
         padding-right: 0;
@@ -4107,7 +4111,7 @@ a.btn.disabled,fieldset:disabled a.btn {
     }
 }
 
-@media (min-width:1400px) {
+@media (min-width:1200px) {
     .navbar-expand-lg {
         flex-flow: row nowrap;
         justify-content: flex-start
@@ -4148,6 +4152,7 @@ a.btn.disabled,fieldset:disabled a.btn {
 }
 
 @media (min-width:1200px) {
+    
     .navbar-expand-xl {
         flex-flow: row nowrap;
         justify-content: flex-start
@@ -5217,6 +5222,12 @@ a.badge-dark.focus,a.badge-dark:focus {
 @media (max-width:1200px) {
     .close {
         font-size: calc(1.275rem + .3vw)
+    }
+    .flags {
+        position: absolute;
+        right: 50px;
+        bottom: 20px;
+        transition: .5s
     }
 }
 
@@ -9345,13 +9356,13 @@ a.text-dark:focus,a.text-dark:hover {
 
 .bg-appointment {
     background: linear-gradient(rgba(33,30,28,.7),rgba(33,40,28,.7)),url(../img/carousel-1.jpg),no-repeat center center;
-    background-size: cover
+    background-size: cover;
 }
 
 .bg-pricing {
     background: linear-gradient(rgba(33,30,28,.7),rgba(33,40,28,.7)),url(../img/carousel-2.jpg),no-repeat center center;
     background-size: cover;
-    margin-top: 100px
+    margin: 100px 0;
 }
 
 .bg-jumbotron {
@@ -9367,6 +9378,11 @@ a.text-dark:focus,a.text-dark:hover {
     .gift-img {
         object-fit: cover !important;
     }
+}
+
+.footer {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .apo-header {
@@ -9813,6 +9829,13 @@ button {
     }
 }
 
+@media (max-height: 700px) {
+    #header-carousel,.carousel-inner {
+        height: 180vh !important;
+    }
+}
+
+
 @media (max-width:1263px) {    
     #header-carousel,.carousel-inner {
         height: 2500px !important;
@@ -9879,13 +9902,6 @@ button {
 
     .text-white {
         padding-bottom: 5px
-    }
-
-    .flags {
-        position: absolute;
-        right: 50px;
-        bottom: 20px;
-        transition: .5s
     }
     
 }

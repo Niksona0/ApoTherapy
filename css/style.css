@@ -9557,12 +9557,13 @@ button {
 
 .modal-price {
     color: #e09145;
-    font-size: 1.9rem
+    font-size: 1.9rem;
 }
 
 .price-cont {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .jw-modal .jw-modal-body img {

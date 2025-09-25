@@ -144,7 +144,7 @@ const translations = {
 
     rejuBig: "Rejuvans massage is designed to revitalize and rejuvenate the body, promoting relaxation and restoring energy through specialized techniques and soothing movements.",
 
-    guaBig: "Gua sha massage involves scraping the skin with a tool to improve circulation and relieve muscle tension. It's used to reduce inflammation, promote healing, and enhance overall well-being.",
+    guaBig: "Boosts circulation & detoxifies the skin. Reduces puffines & softens expression lines. Promotes lymphatic drainage & deep muscle relaxation. Improves elasticity, tone & natural glow. Relives stress & restores balance. Especially effective for jaw and facial tension (e.g. bruxism)",
 
     faceBig: "Advantages of the Sculptural Face Lifting technique, It perfectly treats the sagging of the face, It helps to straighten the muscles in a natural way, It restores muscle tone and elasticity to normal, It tightens and smooths the skin restoring the oval of the face Improves blood circulation and lymph flow Activates metabolism and tissue nutrition, Eliminates spasms and burns",
 
@@ -385,7 +385,7 @@ const translations = {
 
     rejuBig: "Το μασάζ Rejuvans έχει σχεδιαστεί για να αναζωογονεί και να αναζωογονεί το σώμα, προάγοντας τη χαλάρωση και την αποκατάσταση της ενέργειας μέσω εξειδικευμένων τεχνικών και καταπραϋντικών κινήσεων.",
 
-    guaBig: "Το μασάζ Gua sha περιλαμβάνει ξύσιμο του δέρματος με ένα εργαλείο για τη βελτίωση της κυκλοφορίας και την ανακούφιση της μυϊκής έντασης. Χρησιμοποιείται για τη μείωση της φλεγμονής, την προώθηση της επούλωσης και τη βελτίωση της συνολικής ευεξίας.",
+    guaBig: "Ενισχύει την κυκλοφορία & αποτοξινώνει το δέρμα. Μειώνει το πρήξιμο & απαλύνει τις εκφραστικές ρυτίδες. Προσφέρει λεμφική παροχέτευση & βαθιά μυϊκή χαλάρωση. Βελτιώνει την ελαστικότητα, τον τόνο & τη φυσική λάμψη. Καταπραΰνει το στρες & αποκαθιστά την ισορροπία. Ιδιαίτερα αποτελεσματικό για ένταση στη γνάθο και το πρόσωπο (π.χ. βρουξισμός)",
 
     faceBig: "Πλεονεκτήματα της τεχνικής Sculptural Face Lifting, Αντιμετωπίζει εξαιρετικά τη χαλάρωση του προσώπου, Βοηθάει στην ανόρθωση των μυών με φυσικό τρόπο, Επαναφέρει στο φυσιολογικό τον μυϊκό τόνο και την ελαστικότητα, Συσφίγγει και λειαίνει το δέρμα αποκαθιστώντας το οβάλ του προσώπου, Βελτιώνει την κυκλοφορία του αίματος και τη λεμφική ροή, Ενεργοποιεί το μεταβολισμό και τη θρέψη των ιστών, Εξαφανίζει σπασμούς και μπλοκαρίσματα",
 

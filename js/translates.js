@@ -496,6 +496,9 @@ const switchLanguage = (lang) => {
       }
     }
   });
+
+  // Update <html lang="...">
+  document.documentElement.setAttribute('lang', lang);
 };
 
 const changeLanguage = (event) => {
@@ -507,6 +510,5 @@ const flagsContainer = document.querySelector('.flags');
 flagsContainer.addEventListener('click', changeLanguage);
 
 window.onload = () => {
-  switchLanguage('en');
+  switchLanguage('el'); // Default Greek
 };
-

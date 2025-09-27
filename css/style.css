@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+
 
 @keyframes progress-bar-stripes {
     0%{background-position: 1rem 0
@@ -87,7 +91,7 @@ article,aside,figcaption,figure,footer,header,hgroup,main,nav,section {
 
 body {
     margin: 0;
-    font-family: "Poppins" !important;
+    font-family: 'EB Garamond', serif !important;
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 1.5;
@@ -96,21 +100,40 @@ body {
     background-color: #fff7ea;
 }
 
-li,p {
-    font-family: "Poppins",sans-serif!important
+:lang(el) p,
+:lang(el) li,
+:lang(el) h4 {
+  font-family: 'Noto Sans', sans-serif !important;
+  font-size: 1.2rem !important;
+}
+
+:lang(en) h2,
+:lang(en) h3,
+:lang(en) h4,
+:lang(en) h5,
+:lang(en) h6
+:lang(en) p,
+:lang(en) li,
+:lang(en) span,
+:lang(en) a,
+:lang(en) div {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+:lang(en) .navbar-nav a {
+    font-family: 'EB Garamond', serif !important;
 }
 
 .btn-hover {
-    background-color: #e09145!important;
+    background-color: #937354 !important;
     color: #11212d!important;
     transition: .3s!important;
     font-weight: 400!important;
-    font-family: "Poppins"
 }
 
 .btn-hover:hover {
-    background-color: #11212d!important;
-    color: #e09145!important
+    background-color: #937354 !important;
+    color: #ffd0a2 !important
 }
 
 .modal-text {
@@ -201,7 +224,7 @@ sup {
 }
 
 a {
-    color: var(--primary);
+    color: #937354;
     text-decoration: none;
     background-color: transparent;
     text-transform: uppercase;
@@ -743,7 +766,7 @@ pre code {
 }
 
 .gift-img {
-    object-fit: contain!important
+    object-fit: contain!important;
 }
 
 .col-4 {
@@ -2023,7 +2046,7 @@ pre code {
 }
 
 .form-control::placeholder {
-    color: #e09145;
+    color: #eab683;
     opacity: 1;
     text-align: center;
 }
@@ -2447,8 +2470,7 @@ a.btn.disabled,fieldset:disabled a.btn {
 
 .btn-primary {
     color: #212529;
-    background-color: #e09145;
-    border-color: #e09145
+    background-color: #937354;
 }
 
 .btn-primary:hover {
@@ -5228,6 +5250,12 @@ a.badge-dark.focus,a.badge-dark:focus {
         right: 50px;
         bottom: 20px;
         transition: .5s
+    }
+}
+
+@media (max-width:1300px) {
+    .nav-item {
+        font-size: 1.3rem;
     }
 }
 
@@ -9116,7 +9144,7 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 }
 
 .text-primary {
-    color: #f7a85c !important
+    color: #937354 !important
 }
 
 .text-bold {
@@ -9133,7 +9161,7 @@ a.text-primary:focus,a.text-primary:hover {
 }
 
 .text-secondary {
-    color: #6ebbf6!important
+    color: #eab683!important
 }
 
 a.text-secondary:focus,a.text-secondary:hover {
@@ -9289,7 +9317,7 @@ a.text-dark:focus,a.text-dark:hover {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    padding: 30px 15px;
+    padding: 15px;
     font-weight: 600;
     letter-spacing: 1px;
     color: #211e1c;
@@ -9357,6 +9385,7 @@ a.text-dark:focus,a.text-dark:hover {
 .bg-appointment {
     background: linear-gradient(rgba(33,30,28,.7),rgba(33,40,28,.7)),url(../img/carousel-1.jpg),no-repeat center center;
     background-size: cover;
+    margin: 100px 0 0 0 ;
 }
 
 .bg-pricing {
@@ -9367,16 +9396,18 @@ a.text-dark:focus,a.text-dark:hover {
 
 .bg-jumbotron {
     background: linear-gradient(rgba(33,30,28,.7),rgba(33,40,28,.7)),url(../img/carousel-3.jpg),no-repeat center center;
-    background-size: cover
+    background-size: cover;
 }
 
 @media (min-width:992px) {
-    .contact-form,.pricing-text {
+    /* .contact-form,.pricing-text {
         margin-left: -120px
-    }
+    } */
 
     .gift-img {
-        object-fit: cover !important;
+        object-fit: contain !important;
+        top: 20px;
+
     }
 }
 
@@ -9386,18 +9417,18 @@ a.text-dark:focus,a.text-dark:hover {
 }
 
 .apo-header {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Sofia", cursive;
     font-weight: 600 !important;
     font-size: 3rem !important;
-    color: #e09145 !important;
-    margin-bottom: 30px !important;
+    color: #eab683 !important;
+    margin-bottom: 30px;
 }
 
 .info-cont {
     max-width: 100% !important;
     display: flex;
     position: relative;
-    top: 200px; 
+    top: 180px; 
 }
 
 .hours-text h1 {
@@ -9556,7 +9587,7 @@ button {
 }
 
 .modal-price {
-    color: #e09145;
+    color: #eab683;
     font-size: 1.9rem;
 }
 
@@ -9585,16 +9616,16 @@ button {
 
 .modal-button {
     color: #fff!important;
-    background: #e09145;
+    background: #eab683;
     width: 160px;
     text-transform: uppercase;
-    border: 1px solid #11212d;
+    border: none;
     transition: .5s;
     outline: 0
 }
 
 .modal-button:hover {
-    background-color: #d39e00
+    background-color: #937354;
 }
 
 .flag {
@@ -9798,6 +9829,14 @@ button {
     }
 }
 
+@media (max-width:450px) {
+    .flags {
+        position: relative;
+        left: 20px !important;
+        top: 0px !important;
+    }
+}
+
 @media (max-width:1750px) {
     #header-carousel,.carousel-inner {
         height: 135vh !important;
@@ -9839,22 +9878,23 @@ button {
         font-size: 1.5rem !important;
     }
 
-    .modal-text p {
-        font-size: .8rem !important;
-    }
-
-    .jw-modal-body button {
-        margin-bottom: 20px !important;
-    }
-
     .modal-price {
         display: block !important;
     }
 }
 
-@media (max-height: 500px) {
+@media (max-height: 800px) {
     .jw-modal-body {
         height: 400px !important;
+    }
+
+     .jw-modal-body button {
+        margin-bottom: 20px !important;
+    }
+
+
+    .modal-text p {
+        font-size: .8rem !important;
     }
 }
 

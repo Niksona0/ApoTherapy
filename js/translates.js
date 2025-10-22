@@ -3,7 +3,7 @@ const translations = {
     // Nav bar
     hometext: "Home",
     about: "About",
-    service: "Service",
+    service: "Catalogue",
     masseuse: "masseuse",
     contact: "Contact",
     spa: "Spa & Beauty Center",
@@ -64,8 +64,8 @@ const translations = {
     spatr: "Spa treatments",
     spaTreat: "Relaxation and rejuvenation through massages, facials, and body treatments.",
 
-    prenatal: "Prenatal massage",
-    prenatalMassage: "Designed to relieve pregnancy discomfort and promote relaxation.",
+    pregnancy: "Pregnancy Massage",
+    pregnancyMassage: "Pregnancy massage is safe, effective, and relaxing, offering a complete wellness experience for the expectant mother.",
 
     candle: "Candle experience",
     candleExperience: "Luxurious candle experience massage for deep relaxation and skin hydration.",
@@ -92,7 +92,7 @@ const translations = {
     faceSculptureM: "Face sculpture treatments enhance facial features through advanced cosmetic techniques.",
 
     buccal: "Buccal face massage",
-    buccalFace: "Buccal face massage focuses on cheek and jaw muscle relaxation and rejuvenation.",
+    buccalFace: "Buccal massage is an advanced, natural method of anti-aging and rejuvenation, ideal for those seeking visible and professional results in every session.",
 
     // FOOTER
 
@@ -142,13 +142,15 @@ const translations = {
 
     sportBig: "Sports massage focuses on treating muscles used for athletic performance. It aims to improve flexibility, prevent injuries, and enhance recovery through techniques like deep tissue massage and stretching.",
 
-    rejuBig: "Rejuvans massage is designed to revitalize and rejuvenate the body, promoting relaxation and restoring energy through specialized techniques and soothing movements.",
+    rejuBig: "Rejuvans massage targets facial rejuvenation and lifting, improving skin texture and visibly reducing wrinkles. Through specialized techniques and soothing movements, it promotes relaxation, enhances circulation, and revitalizes energy, leaving the face firm, youthful, and radiant.",
 
     guaBig: "Boosts circulation & detoxifies the skin. Reduces puffines & softens expression lines. Promotes lymphatic drainage & deep muscle relaxation. Improves elasticity, tone & natural glow. Relives stress & restores balance. Especially effective for jaw and facial tension (e.g. bruxism)",
 
     faceBig: "Advantages of the Sculptural Face Lifting technique, It perfectly treats the sagging of the face, It helps to straighten the muscles in a natural way, It restores muscle tone and elasticity to normal, It tightens and smooths the skin restoring the oval of the face Improves blood circulation and lymph flow Activates metabolism and tissue nutrition, Eliminates spasms and burns",
 
-    buccalBig: "There are many innovative beauty and wellness solutions available today and one of these is buccal massage. Tissues don’t receive enough nutrients and oxygen, resulting in water retention, puffiness, a dull complexion, and drooping cheeks and jowls. Buccal massage resolves these issues, providing numerous skin benefits.",
+    buccalBig: "Buccal Massage is an innovative facial treatment technique performed both externally and from inside the mouth. It targets the activation of facial muscles, improves circulation, and rejuvenates facial tissues. This technique helps to lift and tone the face, reduce wrinkles, and enhance skin elasticity. Buccal Massage is ideal for those seeking a natural and effective way to maintain a youthful appearance and improve overall facial health.",
+
+    pregnancyBig: "Pregnancy massage is a special treatment designed to support the unique needs of pregnant women. It focuses on relieving muscle tension, reducing stress and promoting relaxation, helping to improve overall well-being during pregnancy. This gentle and personalized approach not only relieves physical discomfort, but also strengthens the connection between mother and child, creating a calm and supportive experience.",
 
     // about 
     cat: "Certified Alternative Therapist",
@@ -336,6 +338,10 @@ const translations = {
 
     buccal: "Στοματικό μασάζ προσώπου",
     buccalFace: "Το στοματικό μασάζ προσώπου εστιάζει στη χαλάρωση και την αναζωογόνηση των μυών των μάγουλων και των γνάθων.",
+
+    pregnancy: "Μασάζ εγκυμοσύνης",
+    pregnancyMassage: "Το μασάζ εγκυμοσύνης είναι ασφαλές, αποτελεσματικό και χαλαρωτικό, προσφέροντας μια ολοκληρωμένη εμπειρία ευεξίας για τη μέλλουσα μητέρα.",
+    pregnancyBig: "Το μασάζ εγκυμοσύνης είναι μια ειδική θεραπεία σχεδιασμένη για να υποστηρίζει τις μοναδικές ανάγκες των εγκύων γυναικών. Εστιάζει στην ανακούφιση της έντασης στους μύες, τη μείωση του πρηξίματος και την προώθηση της χαλάρωσης, βοηθώντας στη βελτίωση της συνολικής ευεξίας κατά τη διάρκεια της εγκυμοσύνης. Αυτή η ήπια και προσαρμοσμένη προσέγγιση όχι μόνο ανακουφίζει τη σωματική δυσφορία αλλά και ενισχύει τη σύνδεση μεταξύ μητέρας και παιδιού, δημιουργώντας μια ήρεμη και υποστηρικτική εμπειρία.",
 
     // FOOTER
     footerP: "Ακολουθήστε μας στα μέσα κοινωνικής δικτύωσης για ενημερώσεις και προσφορές! Βρείτε την τοποθεσία μας, το email και τον αριθμό τηλεφώνου μας παρακάτω.",

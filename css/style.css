@@ -92,7 +92,7 @@ article,aside,figcaption,figure,footer,header,hgroup,main,nav,section {
 body {
     margin: 0;
     font-family: 'EB Garamond', serif !important;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
     line-height: 1.5;
     color: #11212d;
@@ -104,7 +104,23 @@ body {
 :lang(el) li,
 :lang(el) h4 {
   font-family: 'Noto Sans', sans-serif !important;
-  font-size: 1.2rem !important;
+  font-size: 1.1rem !important;
+}
+
+:lang(en) .big-text {
+    font-size: .8rem !important;
+}
+
+.service-text h4 {
+    font-size: 1.3rem !important;
+}
+
+.service-text p {
+    font-size: .95rem !important;
+}
+
+:lang(el) .big-text {
+    font-size: 1rem !important;
 }
 
 :lang(en) h2,
@@ -124,6 +140,17 @@ body {
     font-family: 'EB Garamond', serif !important;
 }
 
+.hcc, .yec {
+    font-size: 1.3rem;
+}
+
+:lang(en) .hcc, 
+:lang(en) .yec {
+    text-transform: uppercase;
+    font-weight: 400 !important;
+}
+
+
 .btn-hover {
     background-color: #937354 !important;
     color: #11212d!important;
@@ -140,14 +167,7 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    height: 100%
-}
-
-.modal-text p {
-    max-height: 80%;
-    font-size: 1.05rem;
-    line-height: 25px;
-    color: #11212d!important
+    height: 100%;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -384,6 +404,11 @@ legend {
     font-size: .9rem;
     font-family: "Dancing Script", cursive;
     letter-spacing: 2px;
+}
+
+.cataloug-link:hover {
+    text-decoration: none;
+    color: #937354 !important;
 }
 
 @media (max-width:1200px) {
@@ -1965,6 +1990,10 @@ pre code {
 
     .table-responsive-md>.table-bordered {
         border: 0
+    }
+
+    .map-cont {
+        margin: 0 auto;
     }
 }
 
@@ -3961,7 +3990,11 @@ a.btn.disabled,fieldset:disabled a.btn {
     padding: .5rem 1rem;
     transition: .5s;
     font-size: 1.5rem;
-    background: #fff7ea;
+    background: #363636;
+    background: linear-gradient(0deg,rgba(54, 54, 54, 0.15) 0%, rgba(0, 0, 0, 0.63) 100%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .navbar,.navbar .container,.navbar .container-fluid,.navbar .container-lg,.navbar .container-md,.navbar .container-sm,.navbar .container-xl {
@@ -5929,7 +5962,7 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 }
 
 .border-primary {
-    border-color: #e09145!important
+    border-color: #a77445 !important
 }
 
 .border-secondary {
@@ -9164,10 +9197,6 @@ a.text-primary:focus,a.text-primary:hover {
     color: #eab683!important
 }
 
-a.text-secondary:focus,a.text-secondary:hover {
-    color: #2699f2!important
-}
-
 .text-success {
     color: #28a745!important
 }
@@ -9331,6 +9360,10 @@ a.text-dark:focus,a.text-dark:hover {
 @media (max-width:991.98px) {
     .navbar-light .navbar-nav .nav-link {
         padding: 10px 15px
+    }
+
+    .map-cont {
+        transform: translateX(0px) !important;
     }
 }
 
@@ -9511,7 +9544,7 @@ a.text-dark:focus,a.text-dark:hover {
 }
 
 .footer a,.footer i,.footer p {
-    color: #fff !important
+    color: #937354  !important
 }
 
 .contact-form .help-block ul {
@@ -9688,6 +9721,28 @@ button {
     color: #062c33
 }
 
+.map-cont {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  transform: translateX(155px);
+}
+
+.map-cont iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border: 2px solid #e09145 !important;
+  /* Try sepia(), hue-rotate(), invert(), etc. */
+}
+
+.map-cont::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
 @media (max-width:1500px) {
     .img-fluid {
         height: 350px!important
@@ -9827,6 +9882,10 @@ button {
     .submit-btn {
         height: 100%!important;
     }
+
+    .yec, .hcc {
+        font-size: 1.1rem !important;
+    }
 }
 
 @media (max-width:450px) {
@@ -9883,9 +9942,14 @@ button {
     }
 }
 
-@media (max-height: 800px) {
+@media (max-height: 815px) {
     .jw-modal-body {
-        height: 400px !important;
+        height: 550px !important;
+        scrollbar-width: thin !important;
+    }
+    
+    .big-text-cont {
+        height: 100%;
     }
 
      .jw-modal-body button {
@@ -9894,7 +9958,11 @@ button {
 
 
     .modal-text p {
-        font-size: .8rem !important;
+        font-size: .9rem !important;
+    }
+
+    :lang(el) .big-text {
+        font-size: .85rem !important;
     }
 }
 
@@ -9918,7 +9986,7 @@ button {
     }
 
     .logo {
-        width: 150px;
+        width: 170px;
         position: relative;
         left: 20px;
     }
@@ -9966,4 +10034,7 @@ button {
         padding-bottom: 5px
     }
     
+    .map-cont {
+        transform: translateX(70px);
+    }
 }

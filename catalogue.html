@@ -20,6 +20,9 @@
 
     <!-- Link Stylesheet -->
     <link href="css/catalogue.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <!--hidden nav link -->
@@ -42,33 +45,46 @@
     <!-- Navbar End -->
 
     <!-- Main Start -->
-     <div class="catalogue-hero">
+     <div class="catalogue-hero" id="top">
         <div class="hero-cont">
             <div class="title-cont">
                 <h1 class="hero-title text-primary">Catalogue</h1>
                 <h2 class="hero-subtitle text-primary">View our services</h2>
                 <p class="hero-p text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aliquam, veritatis sed ipsa officiis at aliquid nesciunt, eum laudantium suscipit nulla itaque deserunt nihil incidunt. Architecto soluta aliquid, iure eius a ipsum est nisi, consectetur aspernatur eos praesentium ex minima.</p>
-                <div class="arrow">&#8595;</div>
+                <a href="#services-link"><div class="arrow">&#8595;</div></a>
             </div>
         </div>
 
         <div class="line"></div>
 
         <div class="best-cont">
-            <h2>Most Popular Services</h2>
 
-            <div class="services-flex">
-                <div class="ser-cont cont-1">
-                    <h3>Back and Shoulder</h3>
-                    <img src="img/back-shoulder.jpg">
-                </div>
-                <div class="ser-cont cont-2">
-                    <h3>Back and Shoulder</h3>
-                    <img src="img/buccal.jpg">
-                </div>
-                <div class="ser-cont cont-3">
-                    <h3>Back and Shoulder</h3>
-                    <img src="img/deep-tissue.jpg">
+        <h2 class="text-primary">Most Popular Services</h2>
+
+
+            <div class="slider-container">
+                <div class="carousel">
+                    <input type="radio" id="carousel-1" name="carousel[]" checked>
+                    <input type="radio" id="carousel-2" name="carousel[]">
+                <input type="radio" id="carousel-3" name="carousel[]">
+                    <input type="radio" id="carousel-4" name="carousel[]">
+                    <input type="radio" id="carousel-5" name="carousel[]">
+                    <ul class="carousel__items">
+                        <li class="carousel__item"><img src="img/back-shoulder.jpg"><p class="item__name text-primary">Back And Shoulder</p></li>
+                        <li class="carousel__item"><img src="img/massage-aromatherapy-1.jpg"><p class="item__name text-primary">Signature Aromatherapy Massage</p></li>
+                        <li class="carousel__item"><img src="img/buccal.jpg"><p class="item__name text-primary">Buccal Massage</p></li>
+                    </ul>
+                    <div class="carousel__prev">
+                        <label for="carousel-1"></label>
+                        <label for="carousel-2"></label>
+                        <label for="carousel-3"></label>
+                    </div>
+                    <div class="carousel__next">
+                        <label for="carousel-1"></label>
+                        <label for="carousel-2"></label>
+                        <label for="carousel-3"></label>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -76,6 +92,751 @@
     
     </div>
     <!-- Main End -->
+
+    <!-- Services -->
+     <span id="services-link"></span>
+
+    <div class="services">
+        <h2 class="services-title text-primary">All Services</h2>
+
+        <div class="services-cont">
+            <div class="row row-1">
+                <div class="service deep-tissue">
+                    <div class="service-glass">
+
+                        <div class="service-text">
+                            <h3 class="title-service">Deep Tissue Massage</h3>
+                            <p class="about-service">Deep tissue massage targets deep muscle layers to relieve
+                            chronic tension and pain. Using slow, firm strokes, it helps break up scar tissue and
+                            improve blood flow. Ideal for muscle injuries or chronic pain, it promotes better mobility
+                            and muscle health. The focused pressure and deep techniques release muscle knots, leaving
+                            you feeling flexible and relaxed.</p>
+                            <button class="btn" onclick="openModal('modal-1')">View More</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                 <div class="service back-shoulder">
+                    <div class="service-glass">
+
+                        <div class="service-text">
+                            <h3 class="title-service big-title">Back and Shoulder Message</h3>
+                            <p class="about-service">A back and shoulder massage is a therapeutic treatment that specifically targets the muscles
+                        and tissues of the back and shoulders, aiming to release tension, alleviate stiffness, and
+                        improve circulation. This deeply relaxing therapy not only promotes physical relaxation but
+                        also enhances mental well-being, providing a rejuvenating experience that helps restore
+                        balance and comfort to the body.</p>
+                            <button class="btn" onclick="openModal('modal-2')">View More</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-2">
+                <div class="service face-lifting">
+                    <div class="service-glass">
+
+                        <div class="service-text">
+                            <h3 class="title-service">Face Lifting Service</h3>
+                            <p class="about-service">Deep tissue massage targets deep muscle layers to relieve
+                            chronic tension and pain. Using slow, firm strokes, it helps break up scar tissue and
+                            improve blood flow. Ideal for muscle injuries or chronic pain, it promotes better mobility
+                            and muscle health. The focused pressure and deep techniques release muscle knots, leaving
+                            you feeling flexible and relaxed.</p>
+                            <button class="btn" onclick="openModal('modal-3')">View More</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                 <div class="service lymphatic">
+                    <div class="service-glass">
+
+                        <div class="service-text">
+                            <h3 class="title-service big-title">Lymphatic Dranage Massage</h3>
+                            <p class="about-service">A back and shoulder massage is a therapeutic treatment that specifically targets the muscles
+                        and tissues of the back and shoulders, aiming to release tension, alleviate stiffness, and
+                        improve circulation. This deeply relaxing therapy not only promotes physical relaxation but
+                        also enhances mental well-being, providing a rejuvenating experience that helps restore
+                        balance and comfort to the body.</p>
+                            <button class="btn" onclick="openModal('modal-4')">View More</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-3">
+                <div class="service swedish">
+                    <div class="service-glass">
+
+                        <div class="service-text">
+                            <h3 class="title-service">Swedish Massage</h3>
+                            <p class="about-service">Deep tissue massage targets deep muscle layers to relieve
+                            chronic tension and pain. Using slow, firm strokes, it helps break up scar tissue and
+                            improve blood flow. Ideal for muscle injuries or chronic pain, it promotes better mobility
+                            and muscle health. The focused pressure and deep techniques release muscle knots, leaving
+                            you feeling flexible and relaxed.</p>
+                            <button class="btn" onclick="openModal('modal-5')">View More</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                 <div class="service hotstone">
+                    <div class="service-glass">
+
+                        <div class="service-text">
+                            <h3 class="title-service">Hot Stone Massage</h3>
+                            <p class="about-service">A back and shoulder massage is a therapeutic treatment that specifically targets the muscles
+                        and tissues of the back and shoulders, aiming to release tension, alleviate stiffness, and
+                        improve circulation. This deeply relaxing therapy not only promotes physical relaxation but
+                        also enhances mental well-being, providing a rejuvenating experience that helps restore
+                        balance and comfort to the body.</p>
+                            <button class="btn" onclick="openModal('modal-6')">View More</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-4">
+                <div class="service cupping">
+                    <div class="service-glass">
+
+                        <div class="service-text">
+                            <h3 class="title-service">Cupping Therapy</h3>
+                            <p class="about-service">Deep tissue massage targets deep muscle layers to relieve
+                            chronic tension and pain. Using slow, firm strokes, it helps break up scar tissue and
+                            improve blood flow. Ideal for muscle injuries or chronic pain, it promotes better mobility
+                            and muscle health. The focused pressure and deep techniques release muscle knots, leaving
+                            you feeling flexible and relaxed.</p>
+                            <button class="btn" onclick="openModal('modal-7')">View More</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                 <div class="service anti-cellulite">
+                    <div class="service-glass">
+
+                        <div class="service-text">
+                            <h3 class="title-service">Anti Cellulite Massage</h3>
+                            <p class="about-service">A back and shoulder massage is a therapeutic treatment that specifically targets the muscles
+                        and tissues of the back and shoulders, aiming to release tension, alleviate stiffness, and
+                        improve circulation. This deeply relaxing therapy not only promotes physical relaxation but
+                        also enhances mental well-being, providing a rejuvenating experience that helps restore
+                        balance and comfort to the body.</p>
+                            <button class="btn" onclick="openModal('modal-8')">View More</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-5">
+                <div class="service candle-experience">
+                    <div class="service-glass">
+
+                        <div class="service-text">
+                            <h3 class="title-service">Candle Experience</h3>
+                            <p class="about-service">Deep tissue massage targets deep muscle layers to relieve
+                            chronic tension and pain. Using slow, firm strokes, it helps break up scar tissue and
+                            improve blood flow. Ideal for muscle injuries or chronic pain, it promotes better mobility
+                            and muscle health. The focused pressure and deep techniques release muscle knots, leaving
+                            you feeling flexible and relaxed.</p>
+                            <button class="btn" onclick="openModal('modal-9')">View More</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                 <div class="service signature">
+                    <div class="service-glass">
+
+                        <div class="service-text">
+                            <h3 class="title-service big-title">Signature Aromatherapy Massage</h3>
+                            <p class="about-service">A back and shoulder massage is a therapeutic treatment that specifically targets the muscles
+                                                    and tissues of the back and shoulders, aiming to release tension, alleviate stiffness, and
+                                                    improve circulation. This deeply relaxing therapy not only promotes physical relaxation but
+                                                    also enhances mental well-being, providing a rejuvenating experience that helps restore
+                                                    balance and comfort to the body.</p>
+
+                            <button class="btn" onclick="openModal('modal-10')">View More</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-6">
+                <div class="service reflexology">
+                    <div class="service-glass">
+
+                        <div class="service-text">
+                            <h3 class="title-service">Reflexology Massage</h3>
+                            <p class="about-service">Deep tissue massage targets deep muscle layers to relieve
+                            chronic tension and pain. Using slow, firm strokes, it helps break up scar tissue and
+                            improve blood flow. Ideal for muscle injuries or chronic pain, it promotes better mobility
+                            and muscle health. The focused pressure and deep techniques release muscle knots, leaving
+                            you feeling flexible and relaxed.</p>
+                            <button class="btn" onclick="openModal('modal-11')">View More</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                 <div class="service sports">
+                    <div class="service-glass">
+
+                        <div class="service-text">
+                            <h3 class="title-service">Sports Massage</h3>
+                            <p class="about-service">A back and shoulder massage is a therapeutic treatment that specifically targets the muscles
+                                                    and tissues of the back and shoulders, aiming to release tension, alleviate stiffness, and
+                                                    improve circulation. This deeply relaxing therapy not only promotes physical relaxation but
+                                                    also enhances mental well-being, providing a rejuvenating experience that helps restore
+                                                    balance and comfort to the body.</p>
+
+                            <button class="btn" onclick="openModal('modal-12')">View More</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        <div class="row row-7">
+                <div class="service guasha">
+                    <div class="service-glass">
+
+                        <div class="service-text">
+                            <h3 class="title-service">Gua Sha Massage</h3>
+                            <p class="about-service">Deep tissue massage targets deep muscle layers to relieve
+                            chronic tension and pain. Using slow, firm strokes, it helps break up scar tissue and
+                            improve blood flow. Ideal for muscle injuries or chronic pain, it promotes better mobility
+                            and muscle health. The focused pressure and deep techniques release muscle knots, leaving
+                            you feeling flexible and relaxed.</p>
+                            <button class="btn" onclick="openModal('modal-13')">View More</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                 <div class="service rejuvans">
+                    <div class="service-glass">
+
+                        <div class="service-text">
+                            <h3 class="title-service">Rejuvans Massage</h3>
+                            <p class="about-service">A back and shoulder massage is a therapeutic treatment that specifically targets the muscles
+                                                    and tissues of the back and shoulders, aiming to release tension, alleviate stiffness, and
+                                                    improve circulation. This deeply relaxing therapy not only promotes physical relaxation but
+                                                    also enhances mental well-being, providing a rejuvenating experience that helps restore
+                                                    balance and comfort to the body.</p>
+
+                            <button class="btn" onclick="openModal('modal-14')">View More</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-8">
+                <div class="service buccal">
+                    <div class="service-glass">
+
+                        <div class="service-text">
+                            <h3 class="title-service">Buccal face Massage</h3>
+                            <p class="about-service">Deep tissue massage targets deep muscle layers to relieve
+                            chronic tension and pain. Using slow, firm strokes, it helps break up scar tissue and
+                            improve blood flow. Ideal for muscle injuries or chronic pain, it promotes better mobility
+                            and muscle health. The focused pressure and deep techniques release muscle knots, leaving
+                            you feeling flexible and relaxed.</p>
+                            <button class="btn" onclick="openModal('modal-15')">View More</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="modal-1" class="jw-modal">
+        <div class="movement">
+            <div class="jw-modal-body">
+                <img class="modal-img" src="img/deep-tissue.jpg" alt="Deep Tissue Massage Photo">
+                <div class="modal-text">
+                    <div class="modal-title">
+                        <h1 data-translate="deepTissue">Deep tissue</h1>
+                    </div>
+
+                    <p data-translate="dBig" style=>Deep tissue massage targets deep muscle layers to relieve
+                        chronic tension and pain. Using slow, firm strokes, it helps break up scar tissue and
+                        improve blood flow. Ideal for muscle injuries or chronic pain, it promotes better mobility
+                        and muscle health. The focused pressure and deep techniques release muscle knots, leaving
+                        you feeling flexible and relaxed.
+                    </p>
+                    <div class="price-cont">
+                        <h2 class="modal-price"><span class="time">50min</span> -80€</h2>   
+                        <h2 class="modal-price"><span class="time">70min</span> -110€</h2>  
+                    </div> 
+                    <a href="#contact-link"><button data-translate="oNow" class="btn btn-hover btn-order"
+                            onclick="closeModal()">Order Now</button></a>
+                </div>
+                <button class="btn-close" onclick="closeModal()">X</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-2" class="jw-modal">
+        <div class="movement">
+            <div class="jw-modal-body">
+                <img class="modal-img" src="img/back-shoulder.jpg" alt="Back And Shoulder Massage">
+                <div class="modal-text">
+                    <div class="modal-title">
+                        <h1 data-translate="backShoulder">Back and Shoulder Massage</h1>   
+                    </div>
+                    <p data-translate="bBig">
+                    A back and shoulder massage is a therapeutic treatment that specifically targets the muscles
+                    and tissues of the back and shoulders, aiming to release tension, alleviate stiffness, and
+                    improve circulation. This deeply relaxing therapy not only promotes physical relaxation but
+                    also enhances mental well-being, providing a rejuvenating experience that helps restore
+                    balance and comfort to the body.</p>
+                    <div class="price-cont">
+                        <h2 class="modal-price"><span class="time">30min</span> -40€</h2>     
+                    </div>
+
+                    <a href="#contact-link"><button data-translate="oNow" class="btn btn-hover btn-order"
+                            onclick="closeModal()">Order Now</button></a>
+                </div>
+                <button class="btn-close" onclick="closeModal()">X</button>
+            </div>
+        </div>
+    </div>
+
+        <div id="modal-3" class="jw-modal">
+            <div class="movement">
+                <div class="jw-modal-body">
+                    <img class="modal-img" src="img/service-1.jpg" alt="Face Lifting Service Photo">
+                    <div class="modal-text">
+                        <div class="modal-title">
+                            <h1 data-translate="faceLifting">Face Lifting</h1> 
+                        </div>
+                        
+                        <p data-translate="fBig">Facial massage acts like a natural lifting, as its techniques are designed to lift and revitalize every part of it. The massage is applied by a specialist to the face with the fingertips and aims to balance facial expressions and improve the quality of the skin.  muscle tension is released and good muscle tone is restored. Thus, the face regains its natural shape, while microcirculation improves, thus helping the transport of water, oxygen and nutrients to the cells. At the same time, toxins that have accumulated in the subcutaneous tissues and skin are removed.</p>
+                        <div class="price-cont">
+                            <h2 class="modal-price"><span class="time">70min</span> -130€</h2>     
+                        </div>
+
+                        <a href="#contact-link"><button data-translate="oNow" class="btn btn-hover btn-order"
+                                onclick="closeModal()">Order Now</button></a>
+                    </div>
+                    <button class="btn-close" onclick="closeModal()">X</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-4" class="jw-modal">
+            <div class="movement">
+                <div class="jw-modal-body">
+                    <img class="modal-img" src="img/lymphic.webp" alt="Lympahatic Dranage Massage Photo">
+                    <div class="modal-text">
+                        <div class="modal-title">
+                            <h1 data-translate="lympatatic">Lympahatic Dranage Massage</h1>
+                        </div>
+
+                        <p data-translate="lBig">Lymphatic drainage massage stimulates the lymphatic system to
+                            improve circulation and reduce swelling. Using gentle, rhythmic strokes, this massage helps
+                            detoxify the body, enhance immune function, and promote overall health. It's beneficial for
+                            reducing fluid retention and improving skin health, leaving you feeling refreshed and
+                            revitalized.</p>
+                        <div class="price-cont">
+                            <h2 class="modal-price"><span class="time">70min</span> -90€</h2>     
+                            <h2 class="modal-price"><span class="time">90min</span> -110€</h2>   
+                        </div>
+                            
+                        <a href="#contact-link"><button data-translate="oNow" class="btn btn-hover btn-order"
+                                onclick="closeModal()">Order Now</button></a>
+                    </div>
+                    <button class="btn-close" onclick="closeModal()">X</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-5" class="jw-modal">
+            <div class="movement">
+                <div class="jw-modal-body">
+                    <img class="modal-img" src="img/swed.jpeg" alt="Swedish Massage Photo">
+                    <div class="modal-text">
+                        <div class="modal-title">
+                            <h1 data-translate="lympatatic">Swedish Massage</h1>
+                        </div>
+
+                        <p data-translate="lBig">Swedish massage is a popular therapeutic technique involving long strokes, kneading, and circular movements to relax muscles, improve circulation, and promote overall relaxation. It's known for its gentle yet effective approach in reducing tension and enhancing well-being.</p>
+                        <div class="price-cont">
+                            <h2 class="modal-price"><span class="time">50min</span> -60€</h2>     
+                            <h2 class="modal-price"><span class="time">70min</span> -90€</h2>   
+                        </div>
+                            
+                        <a href="#contact-link"><button data-translate="oNow" class="btn btn-hover btn-order"
+                                onclick="closeModal()">Order Now</button></a>
+                    </div>
+                    <button class="btn-close" onclick="closeModal()">X</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="modal-6" class="jw-modal">
+            <div class="movement">
+                <div class="jw-modal-body">
+                    <img class="modal-img" src="img/hotstone2.jpg" alt="Hot Stone Massage Photo">
+                    <div class="modal-text">
+                        <div class="modal-title">
+                            <h1 data-translate="hotstone">Hot Stone Massage</h1>
+                        </div>
+
+                        <p data-translate="lBig">Hot stone massage involves placing heated stones on specific points of the body to relax muscles and promote relaxation. Therapists may also use the stones to massage the body, combining heat with pressure to alleviate tension and improve circulation. It's known for its soothing effects and ability to enhance overall well-being.</p>
+                        <div class="price-cont">
+                            <h2 class="modal-price"><span class="time">60min</span> -100€</h2>     
+                            <h2 class="modal-price"><span class="time">80min</span> -120€</h2>   
+                        </div>
+                            
+                        <a href="#contact-link"><button data-translate="oNow" class="btn btn-hover btn-order"
+                                onclick="closeModal()">Order Now</button></a>
+                    </div>
+                    <button class="btn-close" onclick="closeModal()">X</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-7" class="jw-modal">
+            <div class="movement">
+                <div class="jw-modal-body">
+                    <img class="modal-img" src="img/cup-therapy.jpg" alt="Cupping Therapy Photo">
+                    <div class="modal-text">
+                        <div class="modal-title">
+                            <h1 data-translate="lympatatic">Cupping Thearpy</h1>
+                        </div>
+
+                        <p data-translate="lBig">Cupping therapy involves placing cups on the skin to create suction. This suction helps increase blood flow to the area, promoting healing and relieving muscle tension. It's often used to treat pain, inflammation, and improve circulation. The cups can be left in place or moved around depending on the desired therapeutic effect.</p>
+                        <div class="price-cont">
+                            <h2 class="modal-price"><span class="time">50min</span> -70€</h2>     
+                            <h2 class="modal-price"><span class="time">70min</span> -100€</h2>   
+                        </div>
+                            
+                        <a href="#contact-link"><button data-translate="oNow" class="btn btn-hover btn-order"
+                                onclick="closeModal()">Order Now</button></a>
+                    </div>
+                    <button class="btn-close" onclick="closeModal()">X</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-8" class="jw-modal">
+            <div class="movement">
+                <div class="jw-modal-body">
+                    <img class="modal-img" src="img/anti_cellulite.webp" alt="Anti Cellulite Massage Photo">
+                    <div class="modal-text">
+                        <div class="modal-title">
+                            <h1 data-translate="lympatatic">Anti Cellulite Massage</h1>
+                        </div>
+
+                        <p data-translate="lBig">Anti-cellulite massage targets deep tissue to reduce the appearance of cellulite by improving blood flow and lymphatic drainage. Using firm pressure and specialized techniques, it aims to smooth skin texture and tighten areas affected by cellulite, promoting a more toned appearance over time.</p>
+                        <div class="price-cont">
+                            <h2 class="modal-price"><span class="time">30min</span> -60€</h2>     
+                        </div>
+                            
+                        <a href="#contact-link"><button data-translate="oNow" class="btn btn-hover btn-order"
+                                onclick="closeModal()">Order Now</button></a>
+                    </div>
+                    <button class="btn-close" onclick="closeModal()">X</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="modal-9" class="jw-modal">
+            <div class="movement">
+                <div class="jw-modal-body">
+                    <img class="modal-img" src="img/Candle-massage.jpg" alt="Candle Experience Photo">
+                    <div class="modal-text">
+                        <div class="modal-title">
+                            <h1 data-translate="lympatatic">Candle Experience</h1>
+                        </div>
+
+                        <p data-translate="lBig">Candle experiences involve using candles for a soothing ambiance during activities like massages or relaxation. Their soft light and fragrance enhance calmness, commonly found in spas or personal self-care routines.</p>
+                        <div class="price-cont">
+                            <h2 class="modal-price"><span class="time">55min</span> -130€</h2>     
+                        </div>
+                            
+                        <a href="#contact-link"><button data-translate="oNow" class="btn btn-hover btn-order"
+                                onclick="closeModal()">Order Now</button></a>
+                    </div>
+                    <button class="btn-close" onclick="closeModal()">X</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="modal-10" class="jw-modal">
+            <div class="movement">
+                <div class="jw-modal-body">
+                    <img class="modal-img" src="img/massage-aromatherapy-1.jpg" alt="Signature Aromatherapy Massage Photo">
+                    <div class="modal-text">
+                        <div class="modal-title">
+                            <h1 data-translate="lympatatic">Signature Aromatherapy Massage</h1>
+                        </div>
+
+                        <p data-translate="lBig">Signature aromatherapy massage blends essential oils with therapeutic techniques to relax the body and mind, relieve tension, and enhance well-being through aromas and touch.</p>
+                        <div class="price-cont">
+                            <h2 class="modal-price"><span class="time">55min</span> -100€</h2>     
+                            <h2 class="modal-price"><span class="time">85min</span> -150€</h2>   
+                        </div>
+                            
+                        <a href="#contact-link"><button data-translate="oNow" class="btn btn-hover btn-order"
+                                onclick="closeModal()">Order Now</button></a>
+                    </div>
+                    <button class="btn-close" onclick="closeModal()">X</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="modal-11" class="jw-modal">
+            <div class="movement">
+                <div class="jw-modal-body">
+                    <img class="modal-img" src="img/Foot-massage-technique.jpg" alt="Reflexology Massage Photo">
+                    <div class="modal-text">
+                        <div class="modal-title">
+                            <h1 data-translate="lympatatic">Reflexology Massage</h1>
+                        </div>
+
+                        <p data-translate="lBig">Reflexology massage targets pressure points on the feet, hands, and ears to promote relaxation, relieve tension, and improve overall well-being through stimulation of the body's natural healing processes.</p>
+                        <div class="price-cont">
+                            <h2 class="modal-price"><span class="time">50min</span> -80€</h2>     
+                        </div>
+                            
+                        <a href="#contact-link"><button data-translate="oNow" class="btn btn-hover btn-order"
+                                onclick="closeModal()">Order Now</button></a>
+                    </div>
+                    <button class="btn-close" onclick="closeModal()">X</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="modal-12" class="jw-modal">
+            <div class="movement">
+                <div class="jw-modal-body">
+                    <img class="modal-img" src="img/sportmassage.jpg" alt="Sports Massage Photo">
+                    <div class="modal-text">
+                        <div class="modal-title">
+                            <h1 data-translate="lympatatic">Sports Massage</h1>
+                        </div>
+
+                        <p data-translate="lBig">Sports massage focuses on treating muscles used for athletic performance. It aims to improve flexibility,
+                                                prevent injuries, and enhance recovery through techniques like deep tissue massage and stretching.</p>
+                        <div class="price-cont">
+                            <h2 class="modal-price"><span class="time">50min</span> -110€</h2>     
+                            <h2 class="modal-price"><span class="time">70min</span> -150€</h2>   
+                        </div>
+                            
+                        <a href="#contact-link"><button data-translate="oNow" class="btn btn-hover btn-order"
+                                onclick="closeModal()">Order Now</button></a>
+                    </div>
+                    <button class="btn-close" onclick="closeModal()">X</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-13" class="jw-modal">
+            <div class="movement">
+                <div class="jw-modal-body">
+                    <img class="modal-img" src="img/gua sha.webp" alt="Gua Sha Massage Photo">
+                    <div class="modal-text">
+                        <div class="modal-title">
+                            <h1 data-translate="lympatatic">Gua Sha Massage</h1>
+                        </div>
+
+                        <p data-translate="lBig">Boosts circulation & detoxifies the skin. Reduces pufiness & softens expression lines.
+                                                Promotes lymphatic drainage & deep muscle relaxation. Improves elasticity, tone &
+                                                natural glow. Relieves stress & restores balance. Especially effective for jaw and facial
+                                                tension (e.g. bruxism)</p>
+                        <div class="price-cont">
+                            <h2 class="modal-price"><span class="time">40min</span> -70€</h2>     
+                        </div>
+                            
+                        <a href="#contact-link"><button data-translate="oNow" class="btn btn-hover btn-order"
+                                onclick="closeModal()">Order Now</button></a>
+                    </div>
+                    <button class="btn-close" onclick="closeModal()">X</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-14" class="jw-modal">
+            <div class="movement">
+                <div class="jw-modal-body">
+                    <img class="modal-img" src="img/rejuvans.jpg" alt="Rejuvans Massage Photo">
+                    <div class="modal-text">
+                        <div class="modal-title">
+                            <h1 data-translate="lympatatic">Rejuvans Massage</h1>
+                        </div>
+
+                        <p data-translate="lBig">Rejuvans massage is designed to revitalize and rejuvenate the body, promoting relaxation and restoring
+                                                energy through specialized techniques and soothing movements.</p>
+                        <div class="price-cont">
+                            <h2 class="modal-price"><span class="time">50min</span> -90€</h2>       
+                        </div>
+                            
+                        <a href="#contact-link"><button data-translate="oNow" class="btn btn-hover btn-order"
+                                onclick="closeModal()">Order Now</button></a>
+                    </div>
+                    <button class="btn-close" onclick="closeModal()">X</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-15" class="jw-modal">
+            <div class="movement">
+                <div class="jw-modal-body">
+                    <img class="modal-img" src="img/buccal.jpg" alt="Buccal Face Massage Photo">
+                    <div class="modal-text">
+                        <div class="modal-title">
+                            <h1 data-translate="lympatatic">Buccal Face Massage</h1>
+                        </div>
+
+                        <p data-translate="lBig">There are many innovative beauty and wellness solutions available today and one of these is
+                                                buccal massage. Tissues don’t receive enough nutrients and oxygen, resulting in water retention,
+                                                pufiness, a dull complexion, and drooping cheeks and jowls.
+                                                Buccal massage resolves these issues, providing numerous skin benefits.</p>
+                        <div class="price-cont">
+                            <h2 class="modal-price"><span class="time">70min</span> -120€</h2>     
+                        </div>
+                            
+                        <a href="#contact-link"><button data-translate="oNow" class="btn btn-hover btn-order"
+                                onclick="closeModal()">Order Now</button></a>
+                    </div>
+                    <button class="btn-close" onclick="closeModal()">X</button>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Modals -->
+
+    <!-- Services End -->
+
+    <!-- Contact Start -->
+    <span id="contact-link" style="transform: translateY(-200px); display: block;"></span>
+
+    <div class="contact bg-appointment" id="contact">
+        <div class="contact-cont" style="background: rgba(33, 30, 28, 0.7);">
+            
+                <h1 data-translate="contact" class="contact-title">Contact</h1>
+
+                <form action="" method="POST">
+                    <div class="form-row">
+
+                            <div>
+                                <input data-translate="usrplaceholder" type="text" id="name" name="name"
+                                    class="form-control bg-transparent p-4" placeholder="Your Name"
+                                    required="required" />
+                            </div>
+
+                            <div>
+                                <input data-translate="emailplaceholder" type="email" id="email" name="email"
+                                    class="form-control bg-transparent p-4" placeholder="Your Email"
+                                    required="required" />
+                            </div>
+
+                    </div>
+                    
+                    <div class="form-row">
+                        <div>
+                            <textarea name="user-service" id="service" placeholder="Your Message" data-translate="questionplaceholder" class="bg-transparent form-control"></textarea>
+                        </div>
+
+                        <div>
+                            <button data-translate="mApointment" class="submit-btn form-control" type="submit">Send</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="cataloug-link-cont"><a href="/files/Cataloug.pdf" download class="cataloug-link text-secondary" data-translate="catalouge">Download Our Catalogue</a></div>
+                
+        </div>
+    </div>
+
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+
+    <!-- Footer Start -->
+    <div class="footer container-fluid position-relative py-5 bg-light">
+        <div class="container-footer pt-5">
+            <div class="row-footer">
+                <div class="col-lg-6 pr-lg-5 mb-5">
+                    <h1 class="text-secondary navbar-brand"><span class="text-primary">Apo</span> Therapy</h1>
+
+                    <p data-translate="footerP" class="footer-p">
+                    Follow us on social media for updates and specials! Find our location, email, and phone number below.
+                    </p>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>Idras 5, Neo Psichiko 154 51, Greece</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+30 698 098 2900</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+30 697 349 3100</p>
+                    <p><i class="fa fa-envelope mr-2"></i>dkapotherapy@gmail.com</p>
+                    <p data-translate="hoursTxt"><i class="fa fa-clock mr-2"></i>10:00-20:00 & Sessions by appointment only!</p>
+
+                    <div class="d-flex justify-content-start mt-4">
+                    <a class="btn btn-lg btn-primary btn-lg-square"
+                        href="https://www.instagram.com/spa_magic_hands_massage/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="btn btn-lg btn-primary btn-lg-square mr-2"
+                        href="https://www.facebook.com/profile.php?id=61561850684929"
+                        style="margin-left:5px;">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    </div>
+                </div>
+
+                <div class="map-cont">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12574.713277322!2d23.77951203551592!3d38.00796306861223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1986e98bfa045%3A0x59dd074ca9015f45!2sIdras%205%2C%20Neo%20Psichiko%20154%2051%2C%20Greece!5e0!3m2!1sen!2sge!4v1759564913969!5m2!1sen!2sge"
+                    class="maps"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#home" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
     <script src="js/main.js"></script>
     <!-- <script src="js/translates.js"></script> -->

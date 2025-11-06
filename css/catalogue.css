@@ -96,15 +96,31 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color: #11212d;
-    text-align: left;
     background-color: #fff7ea;
-    height: 3000px;
+    height: 4000px;
     overflow-x: hidden;
 }
 
 .text-primary {
     color: #ba986c !important;
     font-family: 'EB Garamond', serif !important;
+}
+
+.text-secondary {
+    color: #937354 !important;
+    font-family: 'EB Garamond', serif !important;
+}
+
+.text-center {
+    text-align: center!important
+}
+
+.bg-transparent {
+    background-color: transparent!important
+}
+
+.p-4 {
+    padding: 1.5rem!important
 }
 
 hr {
@@ -133,11 +149,10 @@ a:hover {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url(../img/carousel-3.jpg);
-    background-color: red;
+    background-image: url(../img/place.jpg);
     background-size: cover;
     overflow: hidden;
-    z-index: 0;
+    z-index: 1;
 }
 
 .glass {
@@ -153,7 +168,6 @@ a:hover {
 
 .logo {
     width: 150px;
-
 }
 
 .flags {
@@ -182,9 +196,25 @@ a:hover {
     scale: 1.1;
 }
 
+.btn {
+    background-color: #937354;
+    color: #fff;
+    transition: .3s;
+    font-weight: 400;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 10px;
+}
+
+.btn:hover {
+    background-color: #ba986c;
+    cursor: pointer;
+}
+
 .navbar {
     position: fixed;
-    z-index: 999;
+    z-index: 999 !important;
     width: 100%;
     height: 20%;
     padding: .5rem 5rem;
@@ -200,16 +230,6 @@ a:hover {
     align-items: center;
     justify-content: center;
 }
-
-
-
-/* .catalogue-title {
-    font-family: 'EB Garamond', serif !important;
-    font-size: 3rem !important;
-    text-transform: uppercase;
-    color: #bb996c; 
-    transition: .5s;
-} */
 
 .catalogue-title:hover {
     color: #fcbf86 !important;
@@ -235,9 +255,10 @@ a:hover {
 
 .hero-subtitle {
     font-size: 2.5rem;
-    margin-top: -15px;
+    margin-top: 45px;
     font-weight: 500;
     text-transform: capitalize;
+    /* font-family: "Sofia", cursive !important; */
 }
 
 .arrow {
@@ -249,10 +270,7 @@ a:hover {
 }
 
 .arrow:hover {
-    color: #fcbf86 !important;
-    scale: 1.1;
     cursor: pointer;
-    animation: none;
 }
 
 .line {
@@ -273,7 +291,6 @@ a:hover {
 .best-cont h2 {
     font-size: 3rem;
     text-transform: uppercase;
-    color: #ba986c;
     transition: .5s;
 }
 
@@ -281,6 +298,7 @@ a:hover {
     font-size: 1.3rem;
     margin: 20px auto;
     width: 400px;
+    color: #947454;
 }
 
 .services-flex {
@@ -290,18 +308,315 @@ a:hover {
     justify-content: space-between;
 }
 
-.ser-cont h3 {
-    font-size: 1.8rem;
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__prev > label:nth-child(5), .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__next > label:nth-child(2), .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__prev > label:nth-child(1), .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__next > label:nth-child(3), .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__prev > label:nth-child(2), .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__next > label:nth-child(4), .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__prev > label:nth-child(3), .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__next > label:nth-child(5), .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__prev > label:nth-child(4), .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__next > label:nth-child(1) {
+	 opacity: 1 !important;
+	 z-index: 3;
+}
+
+ .slider-container {
+	 width: 700px;
+	 min-width: 700px;
+	 margin: 0px auto;
+}
+ .carousel {
+	 width: 100%;
+	 position: relative;
+	 overflow: hidden;
+     border-radius: 10px;
+}
+ .carousel > input[type="radio"] {
+	 position: absolute;
+	 left: 0;
+	 opacity: 0;
+	 top: 0;
+}
+ .carousel > input[type="radio"]:checked ~ .carousel__items .carousel__item, .carousel > input[type="radio"]:checked ~ .carousel__prev > label, .carousel > input[type="radio"]:checked ~ .carousel__next > label {
+	 opacity: 0;
+}
+ .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(1) {
+	 opacity: 1;
+}
+ .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__nav > label:nth-child(1) {
+	 background: #ccc;
+	 cursor: default;
+	 pointer-events: none;
+}
+ .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(2) {
+	 opacity: 1;
+}
+ .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__nav > label:nth-child(2) {
+	 background: #ccc;
+	 cursor: default;
+	 pointer-events: none;
+}
+ .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(3) {
+	 opacity: 1;
+}
+ .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__nav > label:nth-child(3) {
+	 background: #ccc;
+	 cursor: default;
+	 pointer-events: none;
+}
+ .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(4) {
+	 opacity: 1;
+}
+ .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__nav > label:nth-child(4) {
+	 background: #ccc;
+	 cursor: default;
+	 pointer-events: none;
+}
+ .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(5) {
+	 opacity: 1;
+}
+ .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__nav > label:nth-child(5) {
+	 background: #ccc;
+	 cursor: default;
+	 pointer-events: none;
+}
+ .carousel__items {
+	 margin: 0;
+	 padding: 0;
+	 list-style-type: none;
+	 width: 100%;
+	 height: 600px;
+	 position: relative;
+}
+ .carousel__item {
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 z-index: 1;
+	 transition: opacity 2s;
+	 -webkit-transition: opacity 2s;
+}
+ .carousel__item img {
+	 width: 100%;
+	 vertical-align: middle;
+}
+ .carousel__prev > label, .carousel__next > label {
+	 border: 1px solid #fff;
+	 border-radius: 50%;
+	 cursor: pointer;
+	 display: block;
+	 width: 40px;
+	 height: 40px;
+	 position: absolute;
+	 top: 50%;
+	 transform: translateY(-50%);
+	 -webkit-transform: translateY(-50%);
+	 transition: all 0.3s ease;
+	 -webkit-transition: all 0.3s ease;
+	 opacity: 0;
+	 z-index: 2;
+}
+ .carousel__prev > label:hover, .carousel__next > label:hover, .carousel__prev > label:focus, .carousel__next > label:focus {
+	 opacity: 0.5 !important;
+}
+ .carousel__prev > label:before, .carousel__next > label:before, .carousel__prev > label:after, .carousel__next > label:after {
+	 content: "";
+	 position: absolute;
+	 width: inherit;
+	 height: inherit;
+}
+ .carousel__prev > label:before, .carousel__next > label:before {
+	 background: linear-gradient(to top, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%), linear-gradient(to left, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%);
+	 width: 60%;
+	 height: 60%;
+	 top: 20%;
+}
+ .carousel__prev > label {
+	 left: 2%;
+}
+ .carousel__prev > label:before {
+	 left: 35%;
+	 top: 20%;
+	 transform: rotate(135deg);
+	 -webkit-transform: rotate(135deg);
+}
+ .carousel__next > label {
+	 right: 2%;
+}
+ .carousel__next > label:before {
+	 left: 10%;
+	 transform: rotate(315deg);
+	 -webkit-transform: rotate(315deg);
+}
+
+.carousel__item p {
+    font-size: 2rem;
+    margin-top: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.services {
+    width: 100%;
+    height: auto;
+}
+
+#services-link {
+    position: relative;
+    top: -185px;
+}
+
+.services-title {
+    font-size: 3rem;
+    text-transform: uppercase;
     color: #ba986c;
-    font-family: "Sofia", cursive;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
-.best-cont img {
-    width: 300px;
-    height: 50%;
-    border-radius: 10px;  
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+.services-cont {
+    width: 100%;
+    height: auto;
+    padding: 0 100px 100px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.row {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row-8 {
+    justify-content: center;
+}
+
+.service {
+    width: 550px;
+    height: 600px;
+    margin: 0 120px;
+    border-radius: 10px;
     transition: .5s;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.service-glass {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+    background: rgba(56, 56, 56, 0.22);
+    border-radius: 16px;
+    backdrop-filter: blur(6.3px);
+    -webkit-backdrop-filter: blur(6.3px);
+    color: #ffffff;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.service-glass:hover {
+    background: rgba(56, 56, 56, 0.4);
+}
+
+.service-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.service-text .btn {
+    width: 150px;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+}
+
+.title-service {
+    color: #fff;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.big-title {
+    font-size: 2rem;
+}
+
+.about-service {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0 30px;
+}
+
+.deep-tissue {
+    background-image: url(../img/deep-tissue.jpg);
+}
+
+.back-shoulder {
+    background-image: url(../img/back-shoulder.jpg);
+}
+
+.face-lifting {
+    background-image: url(../img/face.webp);
+}
+
+.lymphatic {
+    background-image: url(../img/lymphic.webp);
+}
+
+.swedish {
+    background-image: url(../img/swed.jpeg);
+}
+
+.hotstone {
+    background-image: url(../img/hotstone2.jpg);
+}
+
+.cupping {
+    background-image: url(../img/cup-therapy.jpg);
+}
+
+.anti-cellulite {
+    background-image: url(../img/anti-cellulite.jpg);
+}
+
+.anti-cellulite {
+    background-image: url(../img/anti_cellulite.webp);
+}
+
+.candle-experience {
+    background-image: url(../img/Candle-massage.jpg);
+}
+
+.signature {
+    background-image: url(../img/massage-aromatherapy-1.jpg);
+}
+
+.reflexology {
+    background-image: url(../img/Foot-massage-technique.jpg);
+}
+
+.sports {
+    background-image: url(../img/sportmassage.jpg);
+}
+
+.guasha {
+    background-image: url(../img/gua\ sha.webp);
+}
+
+.rejuvans {
+    background-image: url(../img/rejuvans.jpg);
+}
+
+.buccal {
+    background-image: url(../img/buccal.jpg);
 }
 
 
@@ -313,6 +628,433 @@ a:hover {
 
 
 
+
+
+
+
+
+
+/* Modal Styling */
+
+.jw-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,.75);
+    overflow: auto;
+    opacity: 0;
+    transition: opacity .3s ease-in;
+    z-index: 9999;
+}
+
+.jw-modal .movement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh
+}
+
+.jw-modal.open {
+    display: block;
+    opacity: 1
+}
+
+.jw-modal-body {
+    max-width: 850px;
+    height: 550px;
+    padding: 20px;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+    display: flex
+}
+
+.btn-order {
+    color: #fff !important;
+    width: 50% !important;
+    position: relative;
+    margin-top: 20px;
+}
+
+.modal-price {
+    color: #eab683;
+    font-size: 1.9rem;
+    margin: 0;
+}
+
+.price-cont {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.jw-modal .jw-modal-body img {
+    min-width: 50%;
+    height: 90%;
+    margin-right: 30px;
+}
+
+.jw-modal .jw-modal-body h1 {
+    max-width: 100%;
+    position: relative;
+    font-size: 2rem
+}
+
+.jw-modal .jw-modal-body p {
+    color: #000;
+    position: relative
+}
+
+.btn-close {
+    height: 50px;
+    position: fixed;
+    right: 15px;
+    top: 10px;
+    font-weight: 700;
+    background-color: transparent!important;
+    color: gray!important;
+    outline: 0;
+    border: 0;
+    transition: .5s;
+    font-size: 1.5rem
+}
+
+.btn-close:hover {
+    color: #e09145!important;
+    background-color: #11212d
+}
+
+/* CONTACT */
+.bg-appointment {
+    background: linear-gradient(rgba(33,30,28,.7),rgba(33,40,28,.7)),url(../img/carousel-1.jpg),no-repeat center center;
+    background-size: cover;
+    margin: 30px 0 0 0;
+}
+
+.contact {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-cont {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #eab683!important;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+textarea {
+    resize: none;
+}
+
+.form-control {
+    display: block;
+    width: 350px;
+    height: 47px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    font-family: Poppins, sans-serif !important;
+    outline: none;
+    margin: 10px;
+}
+
+.form-control::placeholder {
+    color: #eab683;
+    opacity: 1;
+    text-align: center;
+}
+
+.form-control:focus {
+    color: #fff;
+    background-color: #fff;
+    border-color: #fff;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(249,163,146,.25);
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.submit-btn {
+    width: 350px;
+    background-color: #937354;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-family: 'Poppins', sans-serif !important;
+    height: 47px;
+    font-size: 1rem;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #ba986c;
+    cursor: pointer;
+}
+
+.cataloug-link-cont {
+    transform: translateY(-30px);
+    text-align: center;
+}
+
+.cataloug-link {
+    font-size: .9rem;
+    font-family: 'Poppins', sans-serif !important;
+    letter-spacing: 2px;
+    color: #eab683!important;
+}
+
+.cataloug-link:hover {
+    text-decoration: none;
+    color: #937354 !important;
+}
+
+
+/* CONTACT END */
+
+/* FOOTER */
+.footer {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* link/icon/paragraph color inside footer */
+.footer a,.footer i,.footer p {
+    color: #937354  !important;
+}
+.btn {
+    font-weight: 500;
+}
+
+.btn.btn-primary,.btn.btn-secondary,.footer .btn-primary i {
+    color: #fff!important;
+}
+
+.btn-square {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-sm-square {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-lg-square {
+    width: 46px;
+    height: 46px;
+}
+
+.btn-lg-square,.btn-sm-square,.btn-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.map-cont {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  transform: translateX(150px);
+}
+
+.map-cont iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border: 2px solid #e09145 !important;
+  /* Try sepia(), hue-rotate(), invert(), etc. */
+}
+
+.map-cont::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* mobile/responsive adjustments that affect map/footer */
+@media (max-width:991.98px) {
+    .map-cont {
+        transform: translate(0) !important;
+    }
+}
+
+@media (max-width:767.98px) {
+    .map-cont {
+        margin: 0 auto;
+    }
+}
+
+/* background utilities (footer uses bg-light) */
+.bg-light {
+    background-color: #ffe09145 !important;
+    border-radius: 10px;
+}
+
+/* border top used on the small bottom bar */
+.border-top {
+    border-top: 1px solid #dee2e6!important;
+}
+/* container basics (affect footer .container / .container-fluid) */
+.container-footer,.container-fluid,.container-lg,.container-md,.container-sm,.container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* responsive max-widths (these control how the footer's .container behaves) */
+@media (min-width:576px) {
+    .container-footer,.container-sm {
+        max-width: 540px;
+    }
+}
+@media (min-width:768px) {
+    .container-footer,.container-md,.container-sm {
+        max-width: 720px;
+    }
+}
+@media (min-width:992px) {
+    .container-footer,.container-lg,.container-md,.container-sm {
+        max-width: 960px;
+    }
+}
+@media (min-width:1200px) {
+    .container-footer,.container-lg,.container-md,.container-sm,.container-xl {
+        max-width: 1140px;
+    }
+}
+
+/* row / column basics used by footer .row and .col-... */
+.row-footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    font-size: 1.1rem !important;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.navbar-brand {
+    font-family: 'EB Garamond', serif !important;
+    font-size: 2.5rem !important;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.footer-p {
+    max-width: 550px;
+}
+
+
+.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+.col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.mr-2,.mx-2 {
+    margin-right: .5rem!important
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+/* specific column sizes are defined in the stylesheet (so .col-md-6/.col-lg-6 used in footer will work responsively) */
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* responsive column declarations present for breakpoints (these exist across the file to support .col-md-6 / .col-lg-6) */
+@media (min-width:576px) { .col-sm-6 { flex: 0 0 50%; max-width: 50% } }
+@media (min-width:768px) { .col-md { flex-basis: 0; flex-grow: 1; max-width: 100% } }
+@media (min-width:992px) {
+    .col-lg { flex-basis: 0; flex-grow: 1; max-width: 100% }
+}
+/* margins / padding utilities used in footer HTML (present in stylesheet) */
+.mb-5 { margin-bottom: 3rem !important; } /* typical utility; your file defines many utilities like this */
+.mb-3 { margin-bottom: 1rem; }
+.m-0 { margin: 0; }
+.py-5 { padding-top: 3rem; padding-bottom: 3rem; }
+.py-4 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+
+/* text alignment utilities used in the small bottom bar */
+.text-center { text-align: center!important; }
+
+/* FOOTER END */
+
+
+
+
+
+/* Back To Top */
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 11;
+    animation: action 1s infinite alternate;
+    padding: 10px 15px;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+
+
+
+/*Scrollbar Styling */
 
 ::-webkit-scrollbar {
     width: 10px

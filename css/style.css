@@ -791,7 +791,9 @@ pre code {
 }
 
 .gift-img {
-    object-fit: contain!important;
+    object-fit: contain !important;
+    width: 100%;
+    height: 100%;
 }
 
 .col-4 {
@@ -9342,7 +9344,7 @@ a.text-dark:focus,a.text-dark:hover {
     right: 30px;
     bottom: 30px;
     z-index: 11;
-    animation: action 1s infinite alternate
+    animation: action 1s infinite alternate;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -9438,7 +9440,7 @@ a.text-dark:focus,a.text-dark:hover {
     } */
 
     .gift-img {
-        object-fit: contain !important;
+        object-fit: cover !important;
         top: 20px;
 
     }
@@ -9613,8 +9615,8 @@ button {
 }
 
 .btn-order {
-    color: #fff!important;
-    width: 100%!important;
+    color: #fff !important;
+    width: 100% !important;
     position: absolute;
     bottom: 0
 }

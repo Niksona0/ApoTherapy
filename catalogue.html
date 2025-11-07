@@ -48,9 +48,9 @@
      <div class="catalogue-hero" id="top">
         <div class="hero-cont">
             <div class="title-cont">
-                <h1 class="hero-title text-primary">Catalogue</h1>
-                <h2 class="hero-subtitle text-primary">View our services</h2>
-                <p class="hero-p text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aliquam, veritatis sed ipsa officiis at aliquid nesciunt, eum laudantium suscipit nulla itaque deserunt nihil incidunt. Architecto soluta aliquid, iure eius a ipsum est nisi, consectetur aspernatur eos praesentium ex minima.</p>
+                <h1 class="hero-title text-primary" data-translate="catalogueTitle">Catalogue</h1>
+                <h2 class="hero-subtitle text-primary" data-translate="catalogueSubtitle">View our services</h2>
+                <p class="hero-p text-primary" data-translate="catalogueDescription">Our services blend relaxation, renewal, and professional expertise to help you look and feel your best. From soothing massages to advanced skin treatments, every session is designed with genuine attention to your comfort and well-being. Experience care that feels personal, refreshing, and quietly luxurious – every time you visit.</p>
                 <a href="#services-link"><div class="arrow">&#8595;</div></a>
             </div>
         </div>
@@ -59,7 +59,7 @@
 
         <div class="best-cont">
 
-        <h2 class="text-primary">Most Popular Services</h2>
+        <h2 class="text-primary" data-translate="mostPopular">Most Popular Services</h2>
 
 
             <div class="slider-container">
@@ -70,9 +70,9 @@
                     <input type="radio" id="carousel-4" name="carousel[]">
                     <input type="radio" id="carousel-5" name="carousel[]">
                     <ul class="carousel__items">
-                        <li class="carousel__item"><img src="img/back-shoulder.jpg"><p class="item__name text-primary">Back And Shoulder</p></li>
-                        <li class="carousel__item"><img src="img/massage-aromatherapy-1.jpg"><p class="item__name text-primary big-title">Signature Aromatherapy Massage</p></li>
-                        <li class="carousel__item"><img src="img/buccal.jpg"><p class="item__name text-primary">Buccal Massage</p></li>
+                        <li class="carousel__item"><img src="img/back-shoulder.jpg"><p class="item__name text-primary" data-translate="backAndShoulder">Back And Shoulder</p></li>
+                        <li class="carousel__item"><img src="img/massage-aromatherapy-1.jpg"><p class="item__name text-primary big-title" data-translate="signatureAromatherapy">Signature Aromatherapy Massage</p></li>
+                        <li class="carousel__item"><img src="img/buccal.jpg"><p class="item__name text-primary" data-translate="buccalMassage">Buccal Massage</p></li>
                     </ul>
                     <div class="carousel__prev">
                         <label for="carousel-1"></label>
@@ -97,7 +97,7 @@
      <span id="services-link"></span>
 
     <div class="services">
-        <h2 class="services-title text-primary">All Services</h2>
+        <h2 class="services-title text-primary" data-translate="allServices">All Services</h2>
 
         <div class="services-cont">
             <div class="row row-1">
@@ -105,13 +105,13 @@
                     <div class="service-glass">
 
                         <div class="service-text">
-                            <h3 class="title-service">Deep Tissue Massage</h3>
-                            <p class="about-service">Deep tissue massage targets deep muscle layers to relieve
+                            <h3 class="title-service" data-translate="deepTissue">Deep Tissue Massage</h3>
+                            <p class="about-service" data-translate="deepTissueMassage">Deep tissue massage targets deep muscle layers to relieve
                             chronic tension and pain. Using slow, firm strokes, it helps break up scar tissue and
                             improve blood flow. Ideal for muscle injuries or chronic pain, it promotes better mobility
                             and muscle health. The focused pressure and deep techniques release muscle knots, leaving
                             you feeling flexible and relaxed.</p>
-                            <button class="btn" onclick="openModal('modal-1')">View More</button>
+                            <button class="btn" onclick="openModal('modal-1')" data-translate="viewMore">View More</button>
                         </div>
 
                     </div>
@@ -122,13 +122,13 @@
                     <div class="service-glass">
 
                         <div class="service-text">
-                            <h3 class="title-service big-title">Back and Shoulder Message</h3>
-                            <p class="about-service">A back and shoulder massage is a therapeutic treatment that specifically targets the muscles
+                            <h3 class="title-service big-title" data-translate="backShoulder">Back and Shoulder Message</h3>
+                            <p class="about-service" data-translate="backShoulderMassage">A back and shoulder massage is a therapeutic treatment that specifically targets the muscles
                         and tissues of the back and shoulders, aiming to release tension, alleviate stiffness, and
                         improve circulation. This deeply relaxing therapy not only promotes physical relaxation but
                         also enhances mental well-being, providing a rejuvenating experience that helps restore
                         balance and comfort to the body.</p>
-                            <button class="btn" onclick="openModal('modal-2')">View More</button>
+                            <button class="btn" onclick="openModal('modal-2')" data-translate="viewMore">View More</button>
                         </div>
 
                     </div>
@@ -140,13 +140,13 @@
                     <div class="service-glass">
 
                         <div class="service-text">
-                            <h3 class="title-service">Face Lifting Service</h3>
-                            <p class="about-service">Deep tissue massage targets deep muscle layers to relieve
+                            <h3 class="title-service" data-translate="faceLifting">Face Lifting Service</h3>
+                            <p class="about-service" data-translate="faceLiftingMassage">Deep tissue massage targets deep muscle layers to relieve
                             chronic tension and pain. Using slow, firm strokes, it helps break up scar tissue and
                             improve blood flow. Ideal for muscle injuries or chronic pain, it promotes better mobility
                             and muscle health. The focused pressure and deep techniques release muscle knots, leaving
                             you feeling flexible and relaxed.</p>
-                            <button class="btn" onclick="openModal('modal-3')">View More</button>
+                            <button class="btn" onclick="openModal('modal-3')" data-translate="viewMore">View More</button>
                         </div>
 
                     </div>
@@ -157,13 +157,15 @@
                     <div class="service-glass">
 
                         <div class="service-text">
-                            <h3 class="title-service big-title">Lymphatic Dranage Massage</h3>
-                            <p class="about-service">A back and shoulder massage is a therapeutic treatment that specifically targets the muscles
-                        and tissues of the back and shoulders, aiming to release tension, alleviate stiffness, and
-                        improve circulation. This deeply relaxing therapy not only promotes physical relaxation but
-                        also enhances mental well-being, providing a rejuvenating experience that helps restore
-                        balance and comfort to the body.</p>
-                            <button class="btn" onclick="openModal('modal-4')">View More</button>
+                            <h3 class="title-service big-title" data-translate="lympatatic">Lymphatic Dranage Massage</h3>
+                            <p class="about-service" data-translate="lympataticMassage">
+                            A back and shoulder massage is a therapeutic treatment that specifically targets the muscles
+                            and tissues of the back and shoulders, aiming to release tension, alleviate stiffness, and
+                            improve circulation. This deeply relaxing therapy not only promotes physical relaxation but
+                            also enhances mental well-being, providing a rejuvenating experience that helps restore
+                            balance and comfort to the body.</p>
+
+                            <button class="btn" onclick="openModal('modal-4')" data-translate="viewMore">View More</button>
                         </div>
 
                     </div>
@@ -175,13 +177,15 @@
                     <div class="service-glass">
 
                         <div class="service-text">
-                            <h3 class="title-service">Swedish Massage</h3>
-                            <p class="about-service">Deep tissue massage targets deep muscle layers to relieve
+                            <h3 class="title-service" data-translate="swedish">Swedish Massage</h3>
+                            <p class="about-service" data-translate="swedishMassage">
+                            Deep tissue massage targets deep muscle layers to relieve
                             chronic tension and pain. Using slow, firm strokes, it helps break up scar tissue and
                             improve blood flow. Ideal for muscle injuries or chronic pain, it promotes better mobility
                             and muscle health. The focused pressure and deep techniques release muscle knots, leaving
                             you feeling flexible and relaxed.</p>
-                            <button class="btn" onclick="openModal('modal-5')">View More</button>
+
+                            <button class="btn" onclick="openModal('modal-5')" data-translate="viewMore">View More</button>
                         </div>
 
                     </div>
@@ -192,13 +196,15 @@
                     <div class="service-glass">
 
                         <div class="service-text">
-                            <h3 class="title-service">Hot Stone Massage</h3>
-                            <p class="about-service">A back and shoulder massage is a therapeutic treatment that specifically targets the muscles
-                        and tissues of the back and shoulders, aiming to release tension, alleviate stiffness, and
-                        improve circulation. This deeply relaxing therapy not only promotes physical relaxation but
-                        also enhances mental well-being, providing a rejuvenating experience that helps restore
-                        balance and comfort to the body.</p>
-                            <button class="btn" onclick="openModal('modal-6')">View More</button>
+                            <h3 class="title-service" data-translate="hotStone">Hot Stone Massage</h3>
+                            <p class="about-service" data-translate="hotStoneMassage">
+                            A back and shoulder massage is a therapeutic treatment that specifically targets the muscles
+                            and tissues of the back and shoulders, aiming to release tension, alleviate stiffness, and
+                            improve circulation. This deeply relaxing therapy not only promotes physical relaxation but
+                            also enhances mental well-being, providing a rejuvenating experience that helps restore
+                            balance and comfort to the body.</p>
+                            
+                            <button class="btn" onclick="openModal('modal-6')" data-translate="viewMore">View More</button>
                         </div>
 
                     </div>
@@ -210,30 +216,29 @@
                     <div class="service-glass">
 
                         <div class="service-text">
-                            <h3 class="title-service">Cupping Therapy</h3>
-                            <p class="about-service">Deep tissue massage targets deep muscle layers to relieve
+                            <h3 class="title-service" data-translate="cup">Cupping Therapy</h3>
+                            <p class="about-service" data-translate="cupMassage">Deep tissue massage targets deep muscle layers to relieve
                             chronic tension and pain. Using slow, firm strokes, it helps break up scar tissue and
                             improve blood flow. Ideal for muscle injuries or chronic pain, it promotes better mobility
                             and muscle health. The focused pressure and deep techniques release muscle knots, leaving
                             you feeling flexible and relaxed.</p>
-                            <button class="btn" onclick="openModal('modal-7')">View More</button>
+                            <button class="btn" onclick="openModal('modal-7')" data-translate="viewMore">View More</button>
                         </div>
 
                     </div>
-
                 </div>
 
                  <div class="service anti-cellulite">
                     <div class="service-glass">
 
                         <div class="service-text">
-                            <h3 class="title-service big-title">Anti Cellulite Massage</h3>
-                            <p class="about-service">A back and shoulder massage is a therapeutic treatment that specifically targets the muscles
+                            <h3 class="title-service big-title" data-translate="antiCell">Anti Cellulite Massage</h3>
+                            <p class="about-service" data-translate="antiCellMassage">A back and shoulder massage is a therapeutic treatment that specifically targets the muscles
                         and tissues of the back and shoulders, aiming to release tension, alleviate stiffness, and
                         improve circulation. This deeply relaxing therapy not only promotes physical relaxation but
                         also enhances mental well-being, providing a rejuvenating experience that helps restore
                         balance and comfort to the body.</p>
-                            <button class="btn" onclick="openModal('modal-8')">View More</button>
+                            <button class="btn" onclick="openModal('modal-8')" data-translate="viewMore">View More</button>
                         </div>
 
                     </div>
@@ -245,13 +250,13 @@
                     <div class="service-glass">
 
                         <div class="service-text">
-                            <h3 class="title-service">Candle Experience</h3>
-                            <p class="about-service">Deep tissue massage targets deep muscle layers to relieve
+                            <h3 class="title-service" data-translate="candle">Candle Experience</h3>
+                            <p class="about-service" data-translate="candleExperience">Deep tissue massage targets deep muscle layers to relieve
                             chronic tension and pain. Using slow, firm strokes, it helps break up scar tissue and
                             improve blood flow. Ideal for muscle injuries or chronic pain, it promotes better mobility
                             and muscle health. The focused pressure and deep techniques release muscle knots, leaving
                             you feeling flexible and relaxed.</p>
-                            <button class="btn" onclick="openModal('modal-9')">View More</button>
+                            <button class="btn" onclick="openModal('modal-9')" data-translate="viewMore">View More</button>
                         </div>
 
                     </div>
@@ -262,14 +267,14 @@
                     <div class="service-glass">
 
                         <div class="service-text">
-                            <h3 class="title-service big-title">Signature Aromatherapy Massage</h3>
-                            <p class="about-service">A back and shoulder massage is a therapeutic treatment that specifically targets the muscles
+                            <h3 class="title-service big-title" data-translate="signature">Signature Aromatherapy Massage</h3>
+                            <p class="about-service" data-translate="signatureAromath">A back and shoulder massage is a therapeutic treatment that specifically targets the muscles
                                                     and tissues of the back and shoulders, aiming to release tension, alleviate stiffness, and
                                                     improve circulation. This deeply relaxing therapy not only promotes physical relaxation but
                                                     also enhances mental well-being, providing a rejuvenating experience that helps restore
                                                     balance and comfort to the body.</p>
 
-                            <button class="btn" onclick="openModal('modal-10')">View More</button>
+                            <button class="btn" onclick="openModal('modal-10')" data-translate="viewMore">View More</button>
                         </div>
 
                     </div>
@@ -281,13 +286,13 @@
                     <div class="service-glass">
 
                         <div class="service-text">
-                            <h3 class="title-service">Reflexology Massage</h3>
-                            <p class="about-service">Deep tissue massage targets deep muscle layers to relieve
+                            <h3 class="title-service" data-translate="reflexology">Reflexology Massage</h3>
+                            <p class="about-service" data-translate="reflexologyMassage">Deep tissue massage targets deep muscle layers to relieve
                             chronic tension and pain. Using slow, firm strokes, it helps break up scar tissue and
                             improve blood flow. Ideal for muscle injuries or chronic pain, it promotes better mobility
                             and muscle health. The focused pressure and deep techniques release muscle knots, leaving
                             you feeling flexible and relaxed.</p>
-                            <button class="btn" onclick="openModal('modal-11')">View More</button>
+                            <button class="btn" onclick="openModal('modal-11')" data-translate="viewMore">View More</button>
                         </div>
 
                     </div>
@@ -298,14 +303,14 @@
                     <div class="service-glass">
 
                         <div class="service-text">
-                            <h3 class="title-service">Sports Massage</h3>
-                            <p class="about-service">A back and shoulder massage is a therapeutic treatment that specifically targets the muscles
+                            <h3 class="title-service" data-translate="sports">Sports Massage</h3>
+                            <p class="about-service" data-translate="sportsMassage">A back and shoulder massage is a therapeutic treatment that specifically targets the muscles
                                                     and tissues of the back and shoulders, aiming to release tension, alleviate stiffness, and
                                                     improve circulation. This deeply relaxing therapy not only promotes physical relaxation but
                                                     also enhances mental well-being, providing a rejuvenating experience that helps restore
                                                     balance and comfort to the body.</p>
 
-                            <button class="btn" onclick="openModal('modal-12')">View More</button>
+                            <button class="btn" onclick="openModal('modal-12')" data-translate="viewMore">View More</button>
                         </div>
 
                     </div>
@@ -317,13 +322,13 @@
                     <div class="service-glass">
 
                         <div class="service-text">
-                            <h3 class="title-service">Gua Sha Massage</h3>
-                            <p class="about-service">Deep tissue massage targets deep muscle layers to relieve
+                            <h3 class="title-service" data-translate="guaSha">Gua Sha Massage</h3>
+                            <p class="about-service" data-translate="guaShaMassage">Deep tissue massage targets deep muscle layers to relieve
                             chronic tension and pain. Using slow, firm strokes, it helps break up scar tissue and
                             improve blood flow. Ideal for muscle injuries or chronic pain, it promotes better mobility
                             and muscle health. The focused pressure and deep techniques release muscle knots, leaving
                             you feeling flexible and relaxed.</p>
-                            <button class="btn" onclick="openModal('modal-13')">View More</button>
+                            <button class="btn" onclick="openModal('modal-13')" data-translate="viewMore">View More</button>
                         </div>
 
                     </div>
@@ -334,14 +339,14 @@
                     <div class="service-glass">
 
                         <div class="service-text">
-                            <h3 class="title-service">Rejuvans Massage</h3>
-                            <p class="about-service">A back and shoulder massage is a therapeutic treatment that specifically targets the muscles
+                            <h3 class="title-service" data-translate="rejuvans">Rejuvans Massage</h3>
+                            <p class="about-service" data-translate="rejuvansMassage">A back and shoulder massage is a therapeutic treatment that specifically targets the muscles
                                                     and tissues of the back and shoulders, aiming to release tension, alleviate stiffness, and
                                                     improve circulation. This deeply relaxing therapy not only promotes physical relaxation but
                                                     also enhances mental well-being, providing a rejuvenating experience that helps restore
                                                     balance and comfort to the body.</p>
 
-                            <button class="btn" onclick="openModal('modal-14')">View More</button>
+                            <button class="btn" onclick="openModal('modal-14')" data-translate="viewMore">View More</button>
                         </div>
 
                     </div>
@@ -353,13 +358,13 @@
                     <div class="service-glass">
 
                         <div class="service-text">
-                            <h3 class="title-service">Buccal face Massage</h3>
-                            <p class="about-service">Deep tissue massage targets deep muscle layers to relieve
+                            <h3 class="title-service" data-translate="buccal">Buccal face Massage</h3>
+                            <p class="about-service" data-translate="buccalFace">Deep tissue massage targets deep muscle layers to relieve
                             chronic tension and pain. Using slow, firm strokes, it helps break up scar tissue and
                             improve blood flow. Ideal for muscle injuries or chronic pain, it promotes better mobility
                             and muscle health. The focused pressure and deep techniques release muscle knots, leaving
                             you feeling flexible and relaxed.</p>
-                            <button class="btn" onclick="openModal('modal-15')">View More</button>
+                            <button class="btn" onclick="openModal('modal-15')" data-translate="viewMore">View More</button>
                         </div>
 
                     </div>
@@ -379,7 +384,7 @@
                         <h1 data-translate="deepTissue">Deep tissue</h1>
                     </div>
 
-                    <p data-translate="dBig" style=>Deep tissue massage targets deep muscle layers to relieve
+                    <p data-translate="dBig">Deep tissue massage targets deep muscle layers to relieve
                         chronic tension and pain. Using slow, firm strokes, it helps break up scar tissue and
                         improve blood flow. Ideal for muscle injuries or chronic pain, it promotes better mobility
                         and muscle health. The focused pressure and deep techniques release muscle knots, leaving
@@ -432,7 +437,7 @@
                             <h1 data-translate="faceLifting">Face Lifting</h1> 
                         </div>
                         
-                        <p data-translate="fBig">Facial massage acts like a natural lifting, as its techniques are designed to lift and revitalize every part of it. The massage is applied by a specialist to the face with the fingertips and aims to balance facial expressions and improve the quality of the skin.  muscle tension is released and good muscle tone is restored. Thus, the face regains its natural shape, while microcirculation improves, thus helping the transport of water, oxygen and nutrients to the cells. At the same time, toxins that have accumulated in the subcutaneous tissues and skin are removed.</p>
+                        <p data-translate="fBig">Facial massage acts like a natural lifting, as its techniques are designed to lift and revitalize every part of it. The massage is applied by a specialist to the face with the fingertips and aims to balance facial expressions and improve the quality of the skin.  muscle tension is released and good muscle tone is restored. Thus, the face regains its natural shape, while microcirculation improves, thus helping the transport of water, oxygen and nutrients to the cells. At the same time, toxins that have accumulated in the subcutaneous tissues and skin are removed.</p>
                         <div class="price-cont">
                             <h2 class="modal-price"><span class="time">70min</span> -130€</h2>     
                         </div>
@@ -478,10 +483,10 @@
                     <img class="modal-img" src="img/swed.jpeg" alt="Swedish Massage Photo">
                     <div class="modal-text">
                         <div class="modal-title">
-                            <h1 data-translate="lympatatic">Swedish Massage</h1>
+                            <h1 data-translate="swedish">Swedish Massage</h1>
                         </div>
 
-                        <p data-translate="lBig">Swedish massage is a popular therapeutic technique involving long strokes, kneading, and circular movements to relax muscles, improve circulation, and promote overall relaxation. It's known for its gentle yet effective approach in reducing tension and enhancing well-being.</p>
+                        <p data-translate="sBig">Swedish massage is a popular therapeutic technique involving long strokes, kneading, and circular movements to relax muscles, improve circulation, and promote overall relaxation. It's known for its gentle yet effective approach in reducing tension and enhancing well-being.</p>
                         <div class="price-cont">
                             <h2 class="modal-price"><span class="time">50min</span> -60€</h2>     
                             <h2 class="modal-price"><span class="time">70min</span> -90€</h2>   
@@ -501,10 +506,10 @@
                     <img class="modal-img" src="img/hotstone2.jpg" alt="Hot Stone Massage Photo">
                     <div class="modal-text">
                         <div class="modal-title">
-                            <h1 data-translate="hotstone">Hot Stone Massage</h1>
+                            <h1 data-translate="hotStone">Hot Stone Massage</h1>
                         </div>
 
-                        <p data-translate="lBig">Hot stone massage involves placing heated stones on specific points of the body to relax muscles and promote relaxation. Therapists may also use the stones to massage the body, combining heat with pressure to alleviate tension and improve circulation. It's known for its soothing effects and ability to enhance overall well-being.</p>
+                        <p data-translate="hBig">Hot stone massage involves placing heated stones on specific points of the body to relax muscles and promote relaxation. Therapists may also use the stones to massage the body, combining heat with pressure to alleviate tension and improve circulation. It's known for its soothing effects and ability to enhance overall well-being.</p>
                         <div class="price-cont">
                             <h2 class="modal-price"><span class="time">60min</span> -100€</h2>     
                             <h2 class="modal-price"><span class="time">80min</span> -120€</h2>   
@@ -524,10 +529,10 @@
                     <img class="modal-img" src="img/cup-therapy.jpg" alt="Cupping Therapy Photo">
                     <div class="modal-text">
                         <div class="modal-title">
-                            <h1 data-translate="lympatatic">Cupping Thearpy</h1>
+                            <h1 data-translate="cup">Cupping Thearpy</h1>
                         </div>
 
-                        <p data-translate="lBig">Cupping therapy involves placing cups on the skin to create suction. This suction helps increase blood flow to the area, promoting healing and relieving muscle tension. It's often used to treat pain, inflammation, and improve circulation. The cups can be left in place or moved around depending on the desired therapeutic effect.</p>
+                        <p data-translate="cBig">Cupping therapy involves placing cups on the skin to create suction. This suction helps increase blood flow to the area, promoting healing and relieving muscle tension. It's often used to treat pain, inflammation, and improve circulation. The cups can be left in place or moved around depending on the desired therapeutic effect.</p>
                         <div class="price-cont">
                             <h2 class="modal-price"><span class="time">50min</span> -70€</h2>     
                             <h2 class="modal-price"><span class="time">70min</span> -100€</h2>   
@@ -547,10 +552,10 @@
                     <img class="modal-img" src="img/anti_cellulite.webp" alt="Anti Cellulite Massage Photo">
                     <div class="modal-text">
                         <div class="modal-title">
-                            <h1 data-translate="lympatatic">Anti Cellulite Massage</h1>
+                            <h1 data-translate="antiCell">Anti Cellulite Massage</h1>
                         </div>
 
-                        <p data-translate="lBig">Anti-cellulite massage targets deep tissue to reduce the appearance of cellulite by improving blood flow and lymphatic drainage. Using firm pressure and specialized techniques, it aims to smooth skin texture and tighten areas affected by cellulite, promoting a more toned appearance over time.</p>
+                        <p data-translate="antiBig">Anti-cellulite massage targets deep tissue to reduce the appearance of cellulite by improving blood flow and lymphatic drainage. Using firm pressure and specialized techniques, it aims to smooth skin texture and tighten areas affected by cellulite, promoting a more toned appearance over time.</p>
                         <div class="price-cont">
                             <h2 class="modal-price"><span class="time">30min</span> -60€</h2>     
                         </div>
@@ -570,10 +575,10 @@
                     <img class="modal-img" src="img/Candle-massage.jpg" alt="Candle Experience Photo">
                     <div class="modal-text">
                         <div class="modal-title">
-                            <h1 data-translate="lympatatic">Candle Experience</h1>
+                            <h1 data-translate="candle">Candle Experience</h1>
                         </div>
 
-                        <p data-translate="lBig">Candle experiences involve using candles for a soothing ambiance during activities like massages or relaxation. Their soft light and fragrance enhance calmness, commonly found in spas or personal self-care routines.</p>
+                        <p data-translate="candlBig">Candle experiences involve using candles for a soothing ambiance during activities like massages or relaxation. Their soft light and fragrance enhance calmness, commonly found in spas or personal self-care routines.</p>
                         <div class="price-cont">
                             <h2 class="modal-price"><span class="time">55min</span> -130€</h2>     
                         </div>
@@ -593,10 +598,10 @@
                     <img class="modal-img" src="img/massage-aromatherapy-1.jpg" alt="Signature Aromatherapy Massage Photo">
                     <div class="modal-text">
                         <div class="modal-title">
-                            <h1 data-translate="lympatatic">Signature Aromatherapy Massage</h1>
+                            <h1 data-translate="signature">Signature Aromatherapy Massage</h1>
                         </div>
 
-                        <p data-translate="lBig">Signature aromatherapy massage blends essential oils with therapeutic techniques to relax the body and mind, relieve tension, and enhance well-being through aromas and touch.</p>
+                        <p data-translate="mmBig">Signature aromatherapy massage blends essential oils with therapeutic techniques to relax the body and mind, relieve tension, and enhance well-being through aromas and touch.</p>
                         <div class="price-cont">
                             <h2 class="modal-price"><span class="time">55min</span> -100€</h2>     
                             <h2 class="modal-price"><span class="time">85min</span> -150€</h2>   
@@ -617,10 +622,10 @@
                     <img class="modal-img" src="img/Foot-massage-technique.jpg" alt="Reflexology Massage Photo">
                     <div class="modal-text">
                         <div class="modal-title">
-                            <h1 data-translate="lympatatic">Reflexology Massage</h1>
+                            <h1 data-translate="reflexology">Reflexology Massage</h1>
                         </div>
 
-                        <p data-translate="lBig">Reflexology massage targets pressure points on the feet, hands, and ears to promote relaxation, relieve tension, and improve overall well-being through stimulation of the body's natural healing processes.</p>
+                        <p data-translate="footBig">Reflexology massage targets pressure points on the feet, hands, and ears to promote relaxation, relieve tension, and improve overall well-being through stimulation of the body's natural healing processes.</p>
                         <div class="price-cont">
                             <h2 class="modal-price"><span class="time">50min</span> -80€</h2>     
                         </div>
@@ -640,10 +645,10 @@
                     <img class="modal-img" src="img/sportmassage.jpg" alt="Sports Massage Photo">
                     <div class="modal-text">
                         <div class="modal-title">
-                            <h1 data-translate="lympatatic">Sports Massage</h1>
+                            <h1 data-translate="sports">Sports Massage</h1>
                         </div>
 
-                        <p data-translate="lBig">Sports massage focuses on treating muscles used for athletic performance. It aims to improve flexibility,
+                        <p data-translate="sportBig">Sports massage focuses on treating muscles used for athletic performance. It aims to improve flexibility,
                                                 prevent injuries, and enhance recovery through techniques like deep tissue massage and stretching.</p>
                         <div class="price-cont">
                             <h2 class="modal-price"><span class="time">50min</span> -110€</h2>     
@@ -664,10 +669,10 @@
                     <img class="modal-img" src="img/gua sha.webp" alt="Gua Sha Massage Photo">
                     <div class="modal-text">
                         <div class="modal-title">
-                            <h1 data-translate="lympatatic">Gua Sha Massage</h1>
+                            <h1 data-translate="guaSha">Gua Sha Massage</h1>
                         </div>
 
-                        <p data-translate="lBig">Boosts circulation & detoxifies the skin. Reduces pufiness & softens expression lines.
+                        <p data-translate="guaBig">Boosts circulation & detoxifies the skin. Reduces pufiness & softens expression lines.
                                                 Promotes lymphatic drainage & deep muscle relaxation. Improves elasticity, tone &
                                                 natural glow. Relieves stress & restores balance. Especially effective for jaw and facial
                                                 tension (e.g. bruxism)</p>
@@ -689,10 +694,10 @@
                     <img class="modal-img" src="img/rejuvans.jpg" alt="Rejuvans Massage Photo">
                     <div class="modal-text">
                         <div class="modal-title">
-                            <h1 data-translate="lympatatic">Rejuvans Massage</h1>
+                            <h1 data-translate="rejuvans">Rejuvans Massage</h1>
                         </div>
 
-                        <p data-translate="lBig">Rejuvans massage is designed to revitalize and rejuvenate the body, promoting relaxation and restoring
+                        <p data-translate="rejuBig">Rejuvans massage is designed to revitalize and rejuvenate the body, promoting relaxation and restoring
                                                 energy through specialized techniques and soothing movements.</p>
                         <div class="price-cont">
                             <h2 class="modal-price"><span class="time">50min</span> -90€</h2>       
@@ -712,11 +717,11 @@
                     <img class="modal-img" src="img/buccal.jpg" alt="Buccal Face Massage Photo">
                     <div class="modal-text">
                         <div class="modal-title">
-                            <h1 data-translate="lympatatic">Buccal Face Massage</h1>
+                            <h1 data-translate="buccal">Buccal Face Massage</h1>
                         </div>
 
-                        <p data-translate="lBig">There are many innovative beauty and wellness solutions available today and one of these is
-                                                buccal massage. Tissues don’t receive enough nutrients and oxygen, resulting in water retention,
+                        <p data-translate="buccalBig">There are many innovative beauty and wellness solutions available today and one of these is
+                                                buccal massage. Tissues don't receive enough nutrients and oxygen, resulting in water retention,
                                                 pufiness, a dull complexion, and drooping cheeks and jowls.
                                                 Buccal massage resolves these issues, providing numerous skin benefits.</p>
                         <div class="price-cont">
@@ -839,6 +844,8 @@
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
     <script src="js/main.js"></script>
-    <!-- <script src="js/translates.js"></script> -->
+    <script src="js/catalogue-translate.js"></script>
+
+
 </body>
 </html>

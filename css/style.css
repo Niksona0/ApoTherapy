@@ -136,6 +136,14 @@ body {
   font-family: 'Poppins', sans-serif !important;
 }
 
+:lang(en) .navbar-brand {
+    font-family: 'EB Garamond', serif !important;
+}
+
+:lang(en) .navbar-brand-apo {
+    font-family: 'EB Garamond', serif !important;
+}
+
 :lang(en) .navbar-nav a {
     font-family: 'EB Garamond', serif !important;
 }
@@ -9665,7 +9673,14 @@ button {
 
 .flag {
     margin-top: 25px;
-    transform: translateY(-10px)
+    margin-left: 5px;
+    transform: translateY(-10px);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.flag:hover {
+    scale: 1.1;
 }
 
 .grecee,.usa {

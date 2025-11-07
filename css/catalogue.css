@@ -194,6 +194,7 @@ a:hover {
 
 .flag:hover {
     scale: 1.1;
+    cursor: pointer;
 }
 
 .btn {
@@ -885,7 +886,7 @@ textarea {
   position: relative;
   width: 400px;
   height: 450px;
-  transform: translateX(150px);
+  transform: translate(150px, 30px);
 }
 
 .map-cont iframe {
@@ -1055,13 +1056,18 @@ textarea {
     font-size: 1.7rem;
 }
 
-:lang(el) button, .form-control {
-    font-family: 'EB Garamond', serif !important;;
-}
-
 :lang(el) button {
     text-transform: uppercase;
 }
+
+button, .form-control::placeholder {
+    font-family: 'EB Garamond', serif !important;;
+}
+
+:lang(en) button, .form-control::placeholder {
+    font-family: 'Poppins', sans-serif !important; 
+}
+
 
 /* Back To Top */
 .back-to-top {
@@ -2015,11 +2021,27 @@ textarea {
     }
 
     .title-service {
-        font-size: 1.3rem;
+        font-size: 1rem !important;
+    }
+
+    .about-service {
+        font-size: .9rem !important;
     }
 
     .contact-title {
         font-size: 1.4rem;
+    }
+
+    .big-title {
+        font-size: .9rem !important;
+    }
+
+    .item__name {
+        font-size: 1rem !important;
+    }
+
+    :lang(el) .item__name {
+        font-size: 1rem !important;
     }
 }
 

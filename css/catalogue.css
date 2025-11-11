@@ -1068,6 +1068,10 @@ button, .form-control::placeholder {
     font-family: 'Poppins', sans-serif !important; 
 }
 
+:lang(el) .jw-modal-body p {
+    font-size: 1.1rem !important;
+}
+
 
 /* Back To Top */
 .back-to-top {
@@ -1568,11 +1572,13 @@ button, .form-control::placeholder {
 
     /* Modal */
     .jw-modal-body {
-        max-width: 700px;
+        max-width: 600px;
         height: auto;
         min-height: 480px;
+        max-height: 90%;
         flex-direction: column;
         padding: 25px 20px;
+        overflow-y: scroll;
     }
 
     .jw-modal .jw-modal-body img {
@@ -1786,6 +1792,8 @@ button, .form-control::placeholder {
     .btn-close {
         font-size: 1.3rem;
         height: 40px;
+        right: 0;
+        top: 0;
     }
 
     /* Contact - properly stacked */
@@ -1987,6 +1995,10 @@ button, .form-control::placeholder {
         width: 100%;
         min-width: 250px;
         max-width: 100%;
+    }
+
+    .modal-title h1 {
+        font-size: 1.4rem !important;
     }
 }
 

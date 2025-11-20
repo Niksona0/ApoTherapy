@@ -176,7 +176,8 @@ h5 {
 }
 
 h6 {
-    font-size: 1rem
+    padding: 5px;
+    font-size: .85rem;
 }
 
 p, ul, ol {
@@ -253,6 +254,10 @@ textarea {
     height: 47px!important;
     resize: none;
     padding: .6rem 1.5rem!important
+}
+
+.mr-2 {
+    margin-right: .5rem!important
 }
 
 .logo {
@@ -535,7 +540,7 @@ textarea {
     position: fixed;
     z-index: 999;
     width: 100%;
-    padding: .5rem 1rem;
+    padding: .5rem 3rem;
     transition: .5s;
     font-size: 1.5rem;
     background: #363636;
@@ -543,6 +548,12 @@ textarea {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+}
+
+@media (max-width:575.98px) {
+    .navbar {
+        padding: .5rem 1rem
+    }
 }
 
 .navbar, .navbar .container, .navbar .container-fluid {
@@ -916,7 +927,7 @@ textarea {
 }
 
 .text-secondary {
-    color: #eab683!important
+    color: #be9a75!important
 }
 
 .text-light {
@@ -1016,7 +1027,7 @@ textarea {
     font-family: "Sofia", cursive;
     font-weight: 600 !important;
     font-size: 3rem !important;
-    color: #eab683 !important;
+    color: #937354 !important;
     margin-bottom: 30px;
 }
 
@@ -1091,6 +1102,8 @@ button {
     margin-right: 5px
 }
 
+/* GALLERY */
+
 .jw-modal {
     display: none;
     position: fixed;
@@ -1101,6 +1114,8 @@ button {
     opacity: 0;
     transition: opacity .3s ease-in
 }
+
+
 
 .jw-modal .movement {
     display: flex;
@@ -1124,54 +1139,7 @@ button {
     display: flex
 }
 
-.btn-order {
-    color: #fff !important;
-    width: 100% !important;
-    position: absolute;
-    bottom: 0
-}
-
-.modal-price {
-    color: #eab683;
-    font-size: 1.9rem;
-}
-
-.price-cont {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-.jw-modal .jw-modal-body img {
-    min-width: 50%;
-    height: 100%;
-    margin-right: 30px
-}
-
-.jw-modal .jw-modal-body h1 {
-    max-width: 100%;
-    position: relative;
-    font-size: 2rem
-}
-
-.jw-modal .jw-modal-body p {
-    color: #000;
-    position: relative
-}
-
-.modal-button {
-    color: #fff!important;
-    background: #eab683;
-    width: 160px;
-    text-transform: uppercase;
-    border: none;
-    transition: .5s;
-    outline: 0
-}
-
-.modal-button:hover {
-    background-color: #937354;
-}
+/* GALLERY */
 
 .flag {
     margin-top: 25px;
@@ -1231,6 +1199,124 @@ button {
     border-radius: 10px;
 }
 
+/* ABOUT */
+
+.about {
+    width: 100%;
+    height: 800px;
+
+    margin-bottom: 100px;
+
+    border-bottom: 1px solid #a77445;
+
+    background-image: url('../img/place.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.about-blur {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    background: #252525;
+    background: linear-gradient(0deg,rgba(32, 32, 32, 0.15) 0%, rgba(0, 0, 0, 0.747) 100%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.178);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.about-cont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 100px;
+
+    justify-content: center;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    margin-right: 100px;
+}
+
+.about-info h1 {
+    font-size: 3rem !important;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+}
+
+:lang(en) .about-info h1 {
+    font-family: 'EB Garamond', serif !important;
+}
+
+.about-info p {
+    color: #fef1ef;
+    font-size: 1.1rem !important;
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.about-cont video {
+    height: 625px;
+    margin-left: 50px;
+    border: 2px solid #e09145 !important;
+}
+
+@media (max-width:1400px) {
+    .about-info h1 {
+        font-size: calc(1.4rem + 1.3vw) !important;
+    }
+
+    .about-info p {
+        font-size: calc(.95rem + .1vw) !important;
+        min-width: 300px;
+    }
+
+    .about-cont video {
+        height: 550px;
+    }
+
+}
+
+@media (max-width:1263px) {
+    .about {
+        height: auto;
+    }
+
+    .about-cont {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+    }
+
+    .about-info h1 {
+        font-size: calc(1.8rem + 1.3vw) !important;
+        margin-bottom: 20px;
+    }
+
+    .about-info {
+        margin: 0 auto 50px;
+    }
+
+    .about-cont video {
+        margin-top: 30px;
+        height: 500px;
+    }
+}
+
+
+
+
+/* ABOUT */
+
+
+/* MAPS */
+
 .map-cont {
     position: relative;
     width: 400px;
@@ -1255,6 +1341,8 @@ button {
 .maps {
     border: 0;
 }
+
+/* MAPS */
 
 @media (max-width:1500px) {
     .img-fluid {
@@ -1322,16 +1410,26 @@ button {
 }
 
 .jw-modal-body-gallery {
-    width: 70%;
+    width: 75%;
     height: 80%;
-    background-color: #11212d;
     padding: 20px;
     position: relative;
     overflow-y: scroll;
-    border-radius: 10px
+
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 .modal-vids {
+    max-width: 900px;
     width: 100%;
     height: 100%
 }
@@ -1343,29 +1441,29 @@ button {
 }
 
 .gallery-title {
-    color: #e09145;
+    color: #937354;
     font-size: 3.5rem;
-    text-transform: capitalize;
+    text-transform: uppercase;
     letter-spacing: 3px;
-    font-family: "Dancing Script",cursive
+    font-family: 'EB Garamond', serif !important;
+    font-weight: 300!important;
 }
 
 .btn-close {
     height: 50px;
     position: fixed;
-    right: 15px;
-    top: 10px;
+    right: 20px;
     font-weight: 700;
     background-color: transparent!important;
     color: gray!important;
-    outline: 0;
-    border: 0;
+    outline: none;
+    border: none;
     transition: .5s;
     font-size: 1.5rem
 }
 
 .btn-close:hover {
-    color: #e09145!important;
+    color: #937354 !important;
     background-color: #11212d
 }
 
@@ -1375,8 +1473,8 @@ button {
         padding: 10px
     }
 
-    .btn-close {
-        top: 0
+    .jw-modal-body-gallery h1 {
+        font-size: 2.5rem !important;
     }
 }
 
@@ -1413,6 +1511,10 @@ button {
 
     .yec, .hcc {
         font-size: 1.1rem !important;
+    }
+
+        .jw-modal-body-gallery h1 {
+        font-size: 2rem !important;
     }
 }
 

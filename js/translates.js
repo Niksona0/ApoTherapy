@@ -163,23 +163,6 @@ const translations = {
     spatherapist: "Spa Therapist",
     cosmetologist: "Cosmetologist",
 
-    // OLD
-    // masseuse: "Masseuse",
-    // khBakuradze: "Khatia Bakuradze",
-    // aboutKhatia: "Certified specialized massage therapist;",
-    // qualifications: "Massage coach.",
-    // fPlace: "15 years of work experience.",
-    // sPlace: "Specializing in various techniques such as:",
-    // certified: "Certified Masseuse",
-    // bom: "Facial Massage",
-    // gusha: "Gua Sha",
-    // tmas: "Thai massage",
-    // cumasag: "Cupping Therapy",
-    // thermas: "Therapeiutic Massage",
-    // mhc: "Many happy customers;",
-    // wowmc: "Winner of World Massage Championship;",
-    // cN: "Contact Now",
-
     // Second carousel
     makeaGift: "Make a Gift",
     egw: "Easy gift-giving with beautifully packaged options.",
@@ -241,6 +224,10 @@ const translations = {
     dataplaceholder: "Select Date",
     timeplaceholder: "Select Time",
     questionplaceholder: "Your Message",
+
+    // Our Place
+    aboutPlaceH: "Our Place",
+    aboutPlaceP: "Welcome to Apo Therapy, your sanctuary for holistic wellness and rejuvenation. Our spa offers a serene environment where expert therapists provide personalized treatments, including massage therapy, aromatherapy, and relaxation techniques. We are dedicated to enhancing your well-being through tailored services that promote physical and mental harmony. Experience the perfect blend of tranquility and professional care at Apo Therapy, where your health and relaxation are our top priorities.",
 
   },
   el: {
@@ -487,6 +474,10 @@ const translations = {
     dataplaceholder: "Επιλέξτε Ημερομηνία",
     timeplaceholder: "Επιλέξτε Ώρα",
     questionplaceholder: "Το μήνυμά σας",
+
+    // Our Place
+    aboutPlaceH: "Ο Τόπος μας",
+    aboutPlaceP: "Το Apo Therapy προσφέρει ένα ήρεμο και φιλόξενο περιβάλλον, σχεδιασμένο για άνεση και αποκατάσταση. Ζεστοί τόνοι, απαλός φωτισμός και μια γαλήνια ατμόσφαιρα δημιουργούν αίσθηση ηρεμίας από την πρώτη στιγμή. Οι χώροι θεραπείας είναι προσεκτικά διαμορφωμένοι για ιδιωτικότητα, καθαριότητα και χαλάρωση. Κάθε στοιχείο είναι μελετημένο ώστε να στηρίζει την ευεξία σας και μια πραγματικά θεραπευτική εμπειρία.",
   }
 };
 

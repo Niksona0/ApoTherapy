@@ -80,42 +80,6 @@ window.addEventListener('load', () => {
 
         $('#date').datetimepicker({ format: 'L' });
         $('#time').datetimepicker({ format: 'LT' });
-
-        const owlCarouselSettings = {
-            autoplay: true,
-            smartSpeed: 1500,
-            loop: true,
-            dots: false,
-            nav: false
-        };
-
-        $(".service-carousel").owlCarousel({
-            ...owlCarouselSettings,
-            responsive: {
-                0: { items: 1 },
-                576: { items: 2 },
-                768: { items: 3 },
-                992: { items: 4 },
-                1200: { items: 5 }
-            }
-        });
-
-        $(".pricing-carousel").owlCarousel({
-            ...owlCarouselSettings,
-            margin: 30,
-            responsive: {
-                0: { items: 1 },
-                576: { items: 1 },
-                768: { items: 2 }
-            }
-        });
-
-        $(".testimonial-carousel").owlCarousel({
-            ...owlCarouselSettings,
-            margin: 30,
-            dots: true,
-            items: 1
-        });
     });
 })(jQuery);
 

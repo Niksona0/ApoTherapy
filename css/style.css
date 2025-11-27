@@ -382,9 +382,10 @@ textarea {
 }
 
 .gift-img {
-    object-fit: contain !important;
+    object-fit: cover !important;
     width: 100%;
     height: 100%;
+    object-position: -90px;
 }
 
 @media (max-width:767.98px) {
@@ -1014,6 +1015,7 @@ textarea {
 @media (min-width:992px) {
     .gift-img {
         object-fit: cover !important;
+        object-position: -90px;
         top: 20px;
     }
 }
@@ -1112,7 +1114,8 @@ button {
     background-color: rgba(0,0,0,.75);
     overflow: auto;
     opacity: 0;
-    transition: opacity .3s ease-in
+    transition: opacity .3s ease-in;
+
 }
 
 
@@ -1204,11 +1207,8 @@ button {
 .about {
     width: 100%;
     height: 800px;
-
     margin-bottom: 100px;
-
     border-bottom: 1px solid #a77445;
-
     background-image: url('../img/place.jpg');
     background-size: cover;
     background-position: bottom;
@@ -1219,7 +1219,6 @@ button {
     width: 100%;
     height: 100%;
     display: flex;
-
     background: #252525;
     background: linear-gradient(0deg,rgba(32, 32, 32, 0.15) 0%, rgba(0, 0, 0, 0.747) 100%);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.178);
@@ -1232,7 +1231,6 @@ button {
     height: 100%;
     display: flex;
     padding: 100px;
-
     justify-content: center;
 }
 
@@ -1410,18 +1408,14 @@ button {
 }
 
 .jw-modal-body-gallery {
-    width: 75%;
-    height: 80%;
-    padding: 20px;
-    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    position: absolute;
     overflow-y: scroll;
 
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: #11111185;
+
 
     &::-webkit-scrollbar {
         display: none;
@@ -1437,7 +1431,8 @@ button {
 .modal-vids video {
     max-width: 90%!important;
     border-radius: 10px;
-    margin: 30px 0
+    margin: 30px 0;
+    border: 1px solid #937354 !important;
 }
 
 .gallery-title {
@@ -1452,10 +1447,12 @@ button {
 .btn-close {
     height: 50px;
     position: fixed;
-    right: 20px;
+    right: 50px;
+    top: 50px;
     font-weight: 700;
+    font-size: 2rem !important;
     background-color: transparent!important;
-    color: gray!important;
+    color:#937354 !important;
     outline: none;
     border: none;
     transition: .5s;
@@ -1467,14 +1464,19 @@ button {
     background-color: #11212d
 }
 
-@media (max-width:600px) {
-    .jw-modal-body-gallery {
-        width: 90% !important;
-        padding: 10px
-    }
+.btn-close:focus {
+    outline: none;
+    border: none
+}
 
+@media (max-width:600px) {
     .jw-modal-body-gallery h1 {
         font-size: 2.5rem !important;
+    }
+
+    .btn-close {
+        right: 20px;
+        top: 42.5px;
     }
 }
 
@@ -1614,9 +1616,14 @@ button {
     }
 
     .logo {
-        width: 170px;
+        width: 150px;
         position: relative;
         left: 20px;
+    }
+
+    .logo:focus {
+        outline: none;
+        border: none;
     }
 
     .info-cont {

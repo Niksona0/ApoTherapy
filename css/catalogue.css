@@ -76,6 +76,11 @@ to {
     box-sizing: border-box
 }
 
+*::focus {
+    outline: none;
+    border: none;
+}
+
 html {
     font-family: sans-serif;
     line-height: 1.15;
@@ -580,7 +585,7 @@ a:hover {
 }
 
 .lymphatic {
-    background-image: url(../img/lymphic.webp);
+    background-image: url(../img/9Q6A8475.jpg);
 }
 
 .swedish {
@@ -665,6 +670,7 @@ a:hover {
     overflow: hidden;
     position: relative;
     display: flex;
+    border: 2px solid #e09145 !important;
 }
 
 .btn-order {
@@ -675,9 +681,13 @@ a:hover {
 }
 
 .modal-price {
-    color: #eab683;
+    color: #937354;
     font-size: 1.9rem;
     margin: 0;
+}
+
+.time {
+    color: #eab683;
 }
 
 .price-cont {
@@ -688,14 +698,15 @@ a:hover {
 
 .jw-modal .jw-modal-body img {
     min-width: 50%;
-    height: 100%;
+    height: auto !important;
     margin-right: 30px;
 }
 
 .jw-modal .jw-modal-body h1 {
     max-width: 100%;
     position: relative;
-    font-size: 2rem
+    font-size: 2rem;
+    color: #937354;
 }
 
 .jw-modal .jw-modal-body p {
@@ -704,29 +715,40 @@ a:hover {
 }
 
 .btn-close {
-    height: 50px;
-    position: fixed;
-    right: 15px;
-    top: 10px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
     font-weight: 700;
     background-color: transparent!important;
-    color: gray!important;
+    color: #937354 !important;
     outline: 0;
-    border: 0;
+    border: 2px solid #eab683;
+    border-radius: 50%;
     transition: .5s;
-    font-size: 1.5rem
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+:lang(en) .btn-close {
+    font-family: 'EB Garamond', serif !important;
 }
 
 .btn-close:hover {
-    color: #e09145!important;
-    background-color: #11212d
+    color: #ffffff !important;
+    background-color: #11212d;
+    rotate: 180deg;
+    background-color: #937354 !important;
+    border: 2px solid #fff;
 }
 
 /* CONTACT */
 .bg-appointment {
-    background: linear-gradient(rgba(33,30,28,.7),rgba(33,40,28,.7)),url(../img/carousel-1.jpg),no-repeat center center;
+    background: linear-gradient(rgba(33,30,28,.7),rgba(33,40,28,.7)),url(../img/place2.jpg),no-repeat center center;
     background-size: cover;
     margin: 30px 0 0 0;
+    background-position: -150px;
 }
 
 .contact {
@@ -804,6 +826,7 @@ textarea {
     box-shadow: 0 0 0 .2rem rgba(249,163,146,.25);
     font-family: 'Poppins', sans-serif !important;
 }
+
 
 .submit-btn {
     width: 350px;
@@ -1048,20 +1071,20 @@ textarea {
     font-size: 2rem !important;
 }
 
-:lang(el) .title-service {
+.title-service {
     font-size: 2rem;
 }
 
-:lang(el) .big-title {
+.big-title {
     font-size: 1.7rem;
+}
+
+:lang(el) .modal-title h1 {
+    font-size: 1.6rem !important;
 }
 
 :lang(el) button {
     text-transform: uppercase;
-}
-
-button, .form-control::placeholder {
-    font-family: 'EB Garamond', serif !important;;
 }
 
 :lang(en) button, .form-control::placeholder {
@@ -1579,19 +1602,32 @@ button, .form-control::placeholder {
         flex-direction: column;
         padding: 25px 20px;
         overflow-y: scroll;
+        scrollbar-width: 0;
+    }
+
+    .jw-modal-body::-webkit-scrollbar {
+        display: none;
     }
 
     .jw-modal .jw-modal-body img {
         min-width: 100%;
         width: 100%;
-        height: 320px;
         object-fit: cover;
         margin-right: 0;
         margin-bottom: 20px;
+        order: 2;
+        margin-bottom: -10px;
+        margin-top: 20px;
     }
 
     .modal-title h1 {
-        font-size: 1.8rem;
+        font-size: 2rem !important;
+    }
+
+    .btn-close {
+        font-size: 1.2rem;
+        right: 10px;
+        top: 10px;
     }
 
     .modal-price {
@@ -1764,7 +1800,7 @@ button, .form-control::placeholder {
 
     /* Modal */
     .jw-modal-body {
-        max-width: 95%;
+        max-width: 85%;
         margin: 10px;
         padding: 20px 15px;
     }
@@ -1790,10 +1826,7 @@ button, .form-control::placeholder {
     }
 
     .btn-close {
-        font-size: 1.3rem;
-        height: 40px;
-        right: 0;
-        top: 0;
+        font-size: 1.2rem;
     }
 
     /* Contact - properly stacked */

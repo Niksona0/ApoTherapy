@@ -88,9 +88,9 @@ const translations = {
     
     sportBig: "Sports massage focuses on treating muscles used for athletic performance. It aims to improve flexibility, prevent injuries, and enhance recovery through techniques like deep tissue massage and stretching.",
     
-    guaBig: "Gua sha massage involves scraping the skin with a tool to improve circulation and relieve muscle tension. It's used to reduce inflammation, promote healing, and en- hance overall well-being",
+    guaBig: "Facial Gua Sha is a massage technique that relaxes the facial muscles, boosts blood and lymphatic circulation, reduces puffiness, improves skin texture and tone, supports regeneration, and helps minimize pores and acne scars.",
     
-    rejuBig: "Rejuvans massage is designed to revitalize and rejuvenate the body, promoting relaxation and restoring energy through specialized techniques and soothing movements.",
+    rejuBig: "Releases the connective tissue, reduces facial muscle tension, and stimulates the production of collagen and elastin. The face becomes brighter, calmer, and smoother with fewer wrinkles. It significantly helps with dark circles, puffiness, headaches, and migraines, while providing overall relaxation to the body and acting preventively against the signs of aging.",
     
     buccalBig: "There are many innovative beauty and wellness solutions available today and one of these is buccal massage. Tissues don’t receive enough nutrients and oxygen, resulting in water retention, puffiness, a dull complexion, and drooping cheeks and jowls. Buccal massage resolves these issues, providing numerous skin benefits.",
     
@@ -168,7 +168,7 @@ const translations = {
     
     sportsMassage: "Το αθλητικό μασάζ είναι μια θεραπεία που εστιάζει στους μύες που χρησιμοποιούνται κατά τη διάρκεια της σωματικής δραστηριότητας, με στόχο την πρόληψη τραυματισμών, την ανακούφιση της έντασης και τη βελτίωση της απόδοσης.",
     
-    guaShaMassage: "Το Gua Sha είναι μια παραδοσιακή θεραπεία που χρησιμοποιεί ένα λείο εργαλείο για να ξύσει το δέρμα, διεγείροντας την κυκλοφορία και προάγοντας τη χαλάρωση.",
+    guaShaMassage: "Το facial Gua Sha είναι μια τεχνική μασάζ που χαλαρώνει τους μυς του προσώπου, τονώνει την κυκλοφορία και τη λεμφική ροή, μειώνει τα οιδήματα, βελτιώνει την υφή και τον τόνο του δέρματος, συμβάλλει στην ανάπλαση και βοηθά στη μείωση πόρων και ουλών ακμής.",
     
     rejuvansMassage: "Το Rejuvans μασάζ είναι μια αποκαταστατική θεραπεία που συνδυάζει ήπιες τεχνικές για να ανανεώσει και να φρεσκάρει το σώμα και το μυαλό.",
     
@@ -202,7 +202,7 @@ const translations = {
     
     guaBig: "Το μασάζ Gua sha περιλαμβάνει ξύσιμο του δέρματος με ένα εργαλείο για τη βελτίωση της κυκλοφορίας και την ανακούφιση της μυϊκής έντασης. Χρησιμοποιείται για τη μείωση της φλεγμονής, την προώθηση της επούλωσης και τη βελτίωση της συνολικής ευεξίας.",
     
-    rejuBig: "Το μασάζ Rejuvans έχει σχεδιαστεί για να αναζωογονεί και να αναζωογονεί το σώμα, προάγοντας τη χαλάρωση και την αποκατάσταση της ενέργειας μέσω εξειδικευμένων τεχνικών και καταπραϋντικών κινήσεων.",
+    rejuBig: "Απελευθερώνει τον συνδετικό ιστό, μειώνει την ένταση των μυών του προσώπου και ενεργοποιεί την παραγωγή κολλαγόνου και ελαστίνης. Το πρόσωπο γίνεται πιο λαμπερό, ήρεμο και με λιγότερες ρυτίδες. Βοηθά σημαντικά σε μαύρους κύκλους, σακούλες, πονοκεφάλους και ημικρανίες, ενώ προσφέρει γενική χαλάρωση στο σώμα και δρα προληπτικά ενάντια στη φθορά του χρόνου.",
     
     buccalBig: "Υπάρχουν πολλές καινοτόμες λύσεις ομορφιάς και ευεξίας που είναι διαθέσιμες σήμερα και μία από αυτές είναι το Buccal μασάζ. Οι ιστοί δεν λαμβάνουν αρκετά θρεπτικά συστατικά και οξυγόνο, με αποτέλεσμα να γίνεται κατακράτηση υγρών, πρήξιμο, θαμπή επιδερμίδα και χαλάρωση στα μάγουλα και στο δέρμα. Το Buccal μασάζ λύνει αυτά τα προβλήματα παρέχοντας.",
     

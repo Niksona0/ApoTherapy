@@ -688,7 +688,7 @@ textarea {
 .carousel-inner::after {
     display: block;
     clear: both;
-    content: ""
+    content: "";
 }
 
 .carousel-item {

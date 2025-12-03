@@ -28,7 +28,7 @@ const translations = {
     reflexology: "Reflexology Massage",
     sports: "Sports Massage",
     guaSha: "Gua Sha Massage",
-    rejuvans: "Rejuvans Massage",
+    rejuvans: "Rejuvance Massage",
     buccal: "Buccal Face Massage",
     
     // Service Descriptions
@@ -58,7 +58,7 @@ const translations = {
     
     guaShaMassage: "Gua Sha is a traditional therapy that uses a smooth tool to scrape the skin, stimulating circulation and promoting relaxation.",
     
-    rejuvansMassage: "Rejuvans massage is a restorative treatment that combines gentle techniques to refresh and renew the body and mind.",
+    rejuvansMassage: "Rejuvance massage is a restorative treatment that combines gentle techniques to refresh and renew the body and mind.",
     
     buccalFace: "Buccal face massage is a specialized facial treatment that involves gentle massage inside the mouth to relax facial muscles and improve tone.",
     
@@ -140,7 +140,7 @@ const translations = {
     reflexology: "ΡΕΦΛΕΞΟΛΟΓΙΑ",
     sports: "ΑΘΛΗΤΙΚΟ ΜΑΣΑΖ",
     guaSha: "ΜΑΣΑΖ GUA SHA",
-    rejuvans: "ΜΑΣΑΖ REJUVANS",
+    rejuvans: "ΜΑΣΑΖ REJUVANCE",
     buccal: "BUCCAL ΜΑΣΑΖ ΠΡΟΣΩΠΟΥ",
     
     // Service Descriptions
@@ -170,7 +170,7 @@ const translations = {
     
     guaShaMassage: "Το facial Gua Sha είναι μια τεχνική μασάζ που χαλαρώνει τους μυς του προσώπου, τονώνει την κυκλοφορία και τη λεμφική ροή, μειώνει τα οιδήματα, βελτιώνει την υφή και τον τόνο του δέρματος, συμβάλλει στην ανάπλαση και βοηθά στη μείωση πόρων και ουλών ακμής.",
     
-    rejuvansMassage: "Το Rejuvans μασάζ είναι μια αποκαταστατική θεραπεία που συνδυάζει ήπιες τεχνικές για να ανανεώσει και να φρεσκάρει το σώμα και το μυαλό.",
+    rejuvansMassage: "Το Rejuvance μασάζ είναι μια αποκαταστατική θεραπεία που συνδυάζει ήπιες τεχνικές για να ανανεώσει και να φρεσκάρει το σώμα και το μυαλό.",
     
     buccalFace: "Το μασάζ προσώπου Buccal είναι μια εξειδικευμένη θεραπεία προσώπου που περιλαμβάνει ήπιο μασάζ μέσα στο στόμα για να χαλαρώσει τους μύες του προσώπου και να βελτιώσει τον τόνο του δέρματος.",
     

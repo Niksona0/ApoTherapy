@@ -261,7 +261,8 @@ textarea {
 }
 
 .logo {
-    width: 130px;
+    width: 170px;
+    margin: 30px 0;
 }
 
 .hero-li {
@@ -391,6 +392,14 @@ textarea {
 @media (max-width:767.98px) {
     .map-cont {
         margin: 0 auto;
+    }
+
+    .about {
+        height: 1850px !important;
+    }
+
+    .about-vid-cont {
+        flex-direction: column;
     }
 }
 
@@ -1037,8 +1046,7 @@ textarea {
 .info-cont {
     max-width: 100% !important;
     display: flex;
-    position: relative;
-    top: 180px; 
+    align-items: center;
 }
 
 .hours-text h1 {
@@ -1207,7 +1215,7 @@ button {
 
 .about {
     width: 100%;
-    height: 800px;
+    height: 1000px;
     margin-bottom: 100px;
     border-bottom: 1px solid #a77445;
     background-image: url('../img/place.jpg');
@@ -1233,13 +1241,19 @@ button {
     display: flex;
     padding: 100px;
     justify-content: center;
+    position: relative;
+    top: 180px;
+}
+
+.about-vid-cont {
+    display: flex;
+    justify-content: center;
 }
 
 .about-info {
     display: flex;
     flex-direction: column;
     text-align: center;
-
     margin-right: 100px;
 }
 
@@ -1247,6 +1261,7 @@ button {
     font-size: 3rem !important;
     margin-bottom: 30px;
     letter-spacing: 3px;
+    text-wrap: nowrap;
 }
 
 :lang(en) .about-info h1 {
@@ -1284,13 +1299,20 @@ button {
 
 @media (max-width:1263px) {
     .about {
-        height: auto;
+        height: 1300px;
     }
 
     .about-cont {
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        padding: 50px;
+        top: 50px;
+        left: -15px;
+    }
+
+    .about-info {
+        position: relative;
+        left: 70px;
     }
 
     .about-info h1 {
@@ -1298,14 +1320,12 @@ button {
         margin-bottom: 20px;
     }
 
-    .about-info {
-        margin: 0 auto 50px;
-    }
-
     .about-cont video {
         margin-top: 30px;
         height: 500px;
     }
+
+    
 }
 
 
@@ -1531,7 +1551,7 @@ button {
 
 @media (max-width:1750px) {
     #header-carousel, .carousel-inner {
-        height: 135vh !important;
+        height: 90vh !important;
     }
 
     .hero-container {
@@ -1561,9 +1581,13 @@ button {
     }
 }
 
-@media (max-height: 700px) {
+@media (max-height: 750px) {
     #header-carousel, .carousel-inner {
-        height: 180vh !important;
+        height: 120vh !important;
+    }
+
+    .info-cont {
+        height: 120vh !important;
     }
 
     .modal-text h1 {
@@ -1600,7 +1624,7 @@ button {
 
 @media (max-width:1263px) {    
     #header-carousel, .carousel-inner {
-        height: 2500px !important;
+        height: 2050px !important;
     }
 
     .apo-header {
@@ -1629,10 +1653,8 @@ button {
 
     .info-cont {
         flex-direction: column;
-        position: relative;
         justify-content: start;
         align-items: center;
-        top: 250px;
     }
 
     .khatia-hero {

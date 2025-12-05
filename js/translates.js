@@ -226,7 +226,7 @@ const translations = {
     questionplaceholder: "Your Message",
 
     // Our Place
-    aboutPlaceH: "Our Place",
+    aboutPlaceH: "Apo Therapy",
     aboutPlaceP: "Welcome to Apo Therapy, your sanctuary for holistic wellness and rejuvenation. Our spa offers a serene environment where expert therapists provide personalized treatments, including massage therapy, aromatherapy, and relaxation techniques. We are dedicated to enhancing your well-being through tailored services that promote physical and mental harmony. Experience the perfect blend of tranquility and professional care at Apo Therapy, where your health and relaxation are our top priorities.",
 
   },
@@ -476,7 +476,7 @@ const translations = {
     questionplaceholder: "Το μήνυμά σας",
 
     // Our Place
-    aboutPlaceH: "Ο Τόπος μας",
+    aboutPlaceH: "Apo Therapy",
     aboutPlaceP: "Το Apo Therapy προσφέρει ένα ήρεμο και φιλόξενο περιβάλλον, σχεδιασμένο για άνεση και αποκατάσταση. Ζεστοί τόνοι, απαλός φωτισμός και μια γαλήνια ατμόσφαιρα δημιουργούν αίσθηση ηρεμίας από την πρώτη στιγμή. Οι χώροι θεραπείας είναι προσεκτικά διαμορφωμένοι για ιδιωτικότητα, καθαριότητα και χαλάρωση. Κάθε στοιχείο είναι μελετημένο ώστε να στηρίζει την ευεξία σας και μια πραγματικά θεραπευτική εμπειρία.",
   }
 };

@@ -1536,10 +1536,27 @@ button {
         font-size: 1.1rem !important;
     }
 
-        .jw-modal-body-gallery h1 {
+    .jw-modal-body-gallery h1 {
         font-size: 2rem !important;
     }
+
+    .about-them {
+        padding: 0 10px !important;
+    }
 }
+@media (max-width: 370px) {
+    .hours-text {
+        right: 15px !important;
+    }
+}
+
+@media (max-width: 340px) {
+    .hours-text {
+        right: 35px !important;
+    }
+}
+
+
 
 @media (max-width:450px) {
     .flags {

@@ -253,7 +253,8 @@ textarea {
     overflow: auto;
     height: 47px!important;
     resize: none;
-    padding: .6rem 1.5rem!important
+    padding: .6rem 1.5rem!important;
+    color: #fff !important;
 }
 
 .mr-2 {
